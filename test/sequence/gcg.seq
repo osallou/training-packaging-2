@@ -1,0 +1,11 @@
+!!NA_SEQUENCE 1.0
+ REFORMAT of: dna1.txt  check: 3818  from: 1  to: 88  November 22, 2001 14:38
+
+ (No documentation)
+
+dna1.txt  Length: 88  November 22, 2001 14:38  Type: N  Check: 3818  ..
+
+       1  TAGTCGTAGT CGGAGCGATG CTGACGATGA CGATGACGAT CGTAGCTGAT 
+
+      51  CGATCGAGCT GATGCTGATC GAGCTAGCTG ATCGATCG
+

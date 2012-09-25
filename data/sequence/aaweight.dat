@@ -1,0 +1,31 @@
+# Amino acid molecular weight (minus water)
+#
+# The mass values used for B,Z,X are mean values of the corresponding masses.
+
+A	 71.08
+B	114.59
+C	103.14
+D	115.09
+E	129.12
+F	147.18
+G	 57.05
+H	137.14
+I	113.16
+J	  0.00
+K	128.17
+L	113.16
+M	131.19
+N	114.10
+O	  0.00
+P	 97.12
+Q	128.13
+R	156.19
+S	 87.08
+T	101.11
+U	  0.00
+V	 99.13
+W	186.21
+X	118.89		# EMBOSS : 144.0000	
+Y	163.18
+Z	128.62
+

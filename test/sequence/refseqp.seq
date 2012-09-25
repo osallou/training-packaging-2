@@ -1,0 +1,311 @@
+LOCUS       NP_055306                715 aa            linear   PRI 28-MAY-2006
+DEFINITION  forkhead box P2 isoform I [Homo sapiens].
+ACCESSION   NP_055306
+VERSION     NP_055306.1  GI:17017963
+DBSOURCE    REFSEQ: accession NM_014491.1
+KEYWORDS    .
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (residues 1 to 715)
+  AUTHORS   Sanjuan,J., Tolosa,A., Gonzalez,J.C., Aguilar,E.J., Perez-Tur,J.,
+            Najera,C., Molto,M.D. and de Frutos,R.
+  TITLE     Association between FOXP2 polymorphisms and schizophrenia with
+            auditory hallucinations
+  JOURNAL   Psychiatr. Genet. 16 (2), 67-72 (2006)
+   PUBMED   16538183
+  REMARK    GeneRIF: The single nucleotide polymorphism rs2396753 appears to
+            confer vulnerability to schizophrenia with auditory hallucinations.
+REFERENCE   2  (residues 1 to 715)
+  AUTHORS   Stroud,J.C., Wu,Y., Bates,D.L., Han,A., Nowick,K., Paabo,S.,
+            Tong,H. and Chen,L.
+  TITLE     Structure of the forkhead domain of FOXP2 bound to DNA
+  JOURNAL   Structure 14 (1), 159-166 (2006)
+   PUBMED   16407075
+  REMARK    GeneRIF: Disease-causing mutations in FOXP2 map either to the DNA
+            binding surface or the domain-swapping dimer interface,
+            functionally corroborating the crystal structure.
+REFERENCE   3  (residues 1 to 715)
+  AUTHORS   Benitez-Burraco,A.
+  TITLE     [FOXP2: from the specific disorder to the molecular biology of
+            language. I. Aetiological, neuroanatomical, neurophysiological and
+            molecular aspects]
+  JOURNAL   Rev Neurol 40 (11), 671-682 (2005)
+   PUBMED   15948071
+  REMARK    Review article
+            GeneRIF: Review. FOXP2 codes for a CNS transcriptional repressor,
+            expressed in the basal ganglia, cortex, cerebellum & the thalamus,
+            involved in thalamic-cortical-striatal circuits for motor planning
+            & learning. Its loss causes specific language impairment.
+REFERENCE   4  (residues 1 to 715)
+  AUTHORS   MacDermot,K.D., Bonora,E., Sykes,N., Coupe,A.M., Lai,C.S.,
+            Vernes,S.C., Vargha-Khadem,F., McKenzie,F., Smith,R.L., Monaco,A.P.
+            and Fisher,S.E.
+  TITLE     Identification of FOXP2 truncation as a novel cause of
+            developmental speech and language deficits
+  JOURNAL   Am. J. Hum. Genet. 76 (6), 1074-1080 (2005)
+   PUBMED   15877281
+  REMARK    GeneRIF: Truncation of FOXP2 is the cause of developmental speech
+            and language deficits.
+REFERENCE   5  (residues 1 to 715)
+  AUTHORS   Vargha-Khadem,F., Gadian,D.G., Copp,A. and Mishkin,M.
+  TITLE     FOXP2 and the neuroanatomy of speech and language
+  JOURNAL   Nat. Rev. Neurosci. 6 (2), 131-138 (2005)
+   PUBMED   15685218
+  REMARK    Review article
+            GeneRIF: a mutation in FOXP2 had been found in a family with a
+            speech and language disorder.
+REFERENCE   6  (residues 1 to 715)
+  AUTHORS   Gong,X., Jia,M., Ruan,Y., Shuang,M., Liu,J., Wu,S., Guo,Y.,
+            Yang,J., Ling,Y., Yang,X. and Zhang,D.
+  TITLE     Association between the FOXP2 gene and autistic disorder in Chinese
+            population
+  JOURNAL   Am. J. Med. Genet. B Neuropsychiatr. Genet. 127 (1), 113-116 (2004)
+   PUBMED   15108192
+  REMARK    GeneRIF: Findings suggest that the FOXP2 gene may be involved in
+            the pathogenesis of autism in Chinese population.
+REFERENCE   7  (residues 1 to 715)
+  AUTHORS   Teramitsu,I., Kudo,L.C., London,S.E., Geschwind,D.H. and White,S.A.
+  TITLE     Parallel FoxP1 and FoxP2 expression in songbird and human brain
+            predicts functional interaction
+  JOURNAL   J. Neurosci. 24 (13), 3152-3163 (2004)
+   PUBMED   15056695
+  REMARK    GeneRIF: FOXP1 and FOXP2 expression patterns in human fetal brain
+            are strikingly similar to those in the songbird, including
+            localization to subcortical structures that function in
+            sensorimotor integration and the control of skilled, coordinated
+            movement
+REFERENCE   8  (residues 1 to 715)
+  AUTHORS   Banerjee-Basu,S. and Baxevanis,A.D.
+  TITLE     Structural analysis of disease-causing mutations in the P-subfamily
+            of forkhead transcription factors
+  JOURNAL   Proteins 54 (4), 639-647 (2004)
+   PUBMED   14997560
+  REMARK    GeneRIF: impact of disease-causing missense mutations on the
+            three-dimensional structure, stability, and surface electrostatic
+            charge distribution of the forkhead domains is examined
+REFERENCE   9  (residues 1 to 715)
+  AUTHORS   Li,S., Weidenfeld,J. and Morrisey,E.E.
+  TITLE     Transcriptional and DNA binding activity of the Foxp1/2/4 family is
+            modulated by heterotypic and homotypic protein interactions
+  JOURNAL   Mol. Cell. Biol. 24 (2), 809-822 (2004)
+   PUBMED   14701752
+  REMARK    GeneRIF: complex regulatory mechanism underlying Foxp1, Foxp2, and
+            Foxp4 activity, demonstrating that Foxp1, Foxp2, and Foxp4 are the
+            first Fox proteins reported whose activity is regulated by homo-
+            and heterodimerization
+REFERENCE   10 (residues 1 to 715)
+  AUTHORS   Liegeois,F., Baldeweg,T., Connelly,A., Gadian,D.G., Mishkin,M. and
+            Vargha-Khadem,F.
+  TITLE     Language fMRI abnormalities associated with FOXP2 gene mutation
+  JOURNAL   Nat. Neurosci. 6 (11), 1230-1237 (2003)
+   PUBMED   14555953
+  REMARK    GeneRIF: This experiment findings suggest that the FOXP2 gene is
+            critically involved in the development of the neural systems that
+            mediate speech and language.
+REFERENCE   11 (residues 1 to 715)
+  AUTHORS   Lai,C.S., Gerrelli,D., Monaco,A.P., Fisher,S.E. and Copp,A.J.
+  TITLE     FOXP2 expression during brain development coincides with adult
+            sites of pathology in a severe speech and language disorder
+  JOURNAL   Brain 126 (PT 11), 2455-2462 (2003)
+   PUBMED   12876151
+  REMARK    GeneRIF: FOXP2/foxp2 is expressed in several structures in
+            developing human/mouse brain including cortical plate, basal
+            ganglia, thalamus, inferior olives and cerebellum. These data
+            suggest a conserved mammalian role in development of motor-related
+            neural circuits
+REFERENCE   12 (residues 1 to 715)
+  AUTHORS   Hillier,L.W., Fulton,R.S., Fulton,L.A., Graves,T.A., Pepin,K.H.,
+            Wagner-McPherson,C., Layman,D., Maas,J., Jaeger,S., Walker,R.,
+            Wylie,K., Sekhon,M., Becker,M.C., O'Laughlin,M.D., Schaller,M.E.,
+            Fewell,G.A., Delehaunty,K.D., Miner,T.L., Nash,W.E., Cordes,M.,
+            Du,H., Sun,H., Edwards,J., Bradshaw-Cordum,H., Ali,J., Andrews,S.,
+            Isak,A., Vanbrunt,A., Nguyen,C., Du,F., Lamar,B., Courtney,L.,
+            Kalicki,J., Ozersky,P., Bielicki,L., Scott,K., Holmes,A.,
+            Harkins,R., Harris,A., Strong,C.M., Hou,S., Tomlinson,C.,
+            Dauphin-Kohlberg,S., Kozlowicz-Reilly,A., Leonard,S., Rohlfing,T.,
+            Rock,S.M., Tin-Wollam,A.M., Abbott,A., Minx,P., Maupin,R.,
+            Strowmatt,C., Latreille,P., Miller,N., Johnson,D., Murray,J.,
+            Woessner,J.P., Wendl,M.C., Yang,S.P., Schultz,B.R., Wallis,J.W.,
+            Spieth,J., Bieri,T.A., Nelson,J.O., Berkowicz,N., Wohldmann,P.E.,
+            Cook,L.L., Hickenbotham,M.T., Eldred,J., Williams,D., Bedell,J.A.,
+            Mardis,E.R., Clifton,S.W., Chissoe,S.L., Marra,M.A., Raymond,C.,
+            Haugen,E., Gillett,W., Zhou,Y., James,R., Phelps,K., Iadanoto,S.,
+            Bubb,K., Simms,E., Levy,R., Clendenning,J., Kaul,R., Kent,W.J.,
+            Furey,T.S., Baertsch,R.A., Brent,M.R., Keibler,E., Flicek,P.,
+            Bork,P., Suyama,M., Bailey,J.A., Portnoy,M.E., Torrents,D.,
+            Chinwalla,A.T., Gish,W.R., Eddy,S.R., McPherson,J.D., Olson,M.V.,
+            Eichler,E.E., Green,E.D., Waterston,R.H. and Wilson,R.K.
+  TITLE     The DNA sequence of human chromosome 7
+  JOURNAL   Nature 424 (6945), 157-164 (2003)
+   PUBMED   12853948
+REFERENCE   13 (residues 1 to 715)
+  AUTHORS   O'Brien,E.K., Zhang,X., Nishimura,C., Tomblin,J.B. and Murray,J.C.
+  TITLE     Association of specific language impairment (SLI) to the region of
+            7q31
+  JOURNAL   Am. J. Hum. Genet. 72 (6), 1536-1543 (2003)
+   PUBMED   12721956
+  REMARK    GeneRIF: Genetic factors for regulation of common language
+            impairment appear to reside in the vicinity of FOXP2.
+REFERENCE   14 (residues 1 to 715)
+  AUTHORS   Scherer,S.W., Cheung,J., MacDonald,J.R., Osborne,L.R.,
+            Nakabayashi,K., Herbrick,J.A., Carson,A.R., Parker-Katiraee,L.,
+            Skaug,J., Khaja,R., Zhang,J., Hudek,A.K., Li,M., Haddad,M.,
+            Duggan,G.E., Fernandez,B.A., Kanematsu,E., Gentles,S.,
+            Christopoulos,C.C., Choufani,S., Kwasnicka,D., Zheng,X.H., Lai,Z.,
+            Nusskern,D., Zhang,Q., Gu,Z., Lu,F., Zeesman,S., Nowaczyk,M.J.,
+            Teshima,I., Chitayat,D., Shuman,C., Weksberg,R., Zackai,E.H.,
+            Grebe,T.A., Cox,S.R., Kirkpatrick,S.J., Rahman,N., Friedman,J.M.,
+            Heng,H.H., Pelicci,P.G., Lo-Coco,F., Belloni,E., Shaffer,L.G.,
+            Pober,B., Morton,C.C., Gusella,J.F., Bruns,G.A., Korf,B.R.,
+            Quade,B.J., Ligon,A.H., Ferguson,H., Higgins,A.W., Leach,N.T.,
+            Herrick,S.R., Lemyre,E., Farra,C.G., Kim,H.G., Summers,A.M.,
+            Gripp,K.W., Roberts,W., Szatmari,P., Winsor,E.J., Grzeschik,K.H.,
+            Teebi,A., Minassian,B.A., Kere,J., Armengol,L., Pujana,M.A.,
+            Estivill,X., Wilson,M.D., Koop,B.F., Tosi,S., Moore,G.E.,
+            Boright,A.P., Zlotorynski,E., Kerem,B., Kroisel,P.M., Petek,E.,
+            Oscier,D.G., Mould,S.J., Dohner,H., Dohner,K., Rommens,J.M.,
+            Vincent,J.B., Venter,J.C., Li,P.W., Mural,R.J., Adams,M.D. and
+            Tsui,L.C.
+  TITLE     Human chromosome 7: DNA sequence and biology
+  JOURNAL   Science 300 (5620), 767-772 (2003)
+   PUBMED   12690205
+REFERENCE   15 (residues 1 to 715)
+  AUTHORS   Zhang,J., Webb,D.M. and Podlaha,O.
+  TITLE     Accelerated protein evolution and origins of human-specific
+            features: Foxp2 as an example
+  JOURNAL   Genetics 162 (4), 1825-1835 (2002)
+   PUBMED   12524352
+  REMARK    GeneRIF: A survey of a diverse group of placental mammals reveals
+            the uniqueness of the human FOXP2 sequence and a population genetic
+            analysis indicates possible adaptive selection behind the
+            accelerated evolution.
+REFERENCE   16 (residues 1 to 715)
+  AUTHORS   Enard,W., Przeworski,M., Fisher,S.E., Lai,C.S., Wiebe,V.,
+            Kitano,T., Monaco,A.P. and Paabo,S.
+  TITLE     Molecular evolution of FOXP2, a gene involved in speech and
+            language
+  JOURNAL   Nature 418 (6900), 869-872 (2002)
+   PUBMED   12192408
+  REMARK    GeneRIF: Human FOXP2 contains changes in amino-acid coding and a
+            pattern of nucleotide polymorphism, which strongly suggest that
+            this gene has been the target of selection during recent human
+            evolution.
+REFERENCE   17 (residues 1 to 715)
+  AUTHORS   Bruce,H.A. and Margolis,R.L.
+  TITLE     FOXP2: novel exons, splice variants, and CAG repeat length
+            stability
+  JOURNAL   Hum. Genet. 111 (2), 136-144 (2002)
+   PUBMED   12189486
+REFERENCE   18 (residues 1 to 715)
+  AUTHORS   Newbury,D.F., Bonora,E., Lamb,J.A., Fisher,S.E., Lai,C.S.,
+            Baird,G., Jannoun,L., Slonims,V., Stott,C.M., Merricks,M.J.,
+            Bolton,P.F., Bailey,A.J. and Monaco,A.P.
+  CONSRTM   International Molecular Genetic Study of Autism Consortium
+  TITLE     FOXP2 is not a major susceptibility gene for autism or specific
+            language impairment
+  JOURNAL   Am. J. Hum. Genet. 70 (5), 1318-1327 (2002)
+   PUBMED   11894222
+  REMARK    GeneRIF: FOXP2 is not a major susceptibility gene for autism or
+            specific language impairment
+REFERENCE   19 (residues 1 to 715)
+  AUTHORS   Lai,C.S., Fisher,S.E., Hurst,J.A., Vargha-Khadem,F. and Monaco,A.P.
+  TITLE     A forkhead-domain gene is mutated in a severe speech and language
+            disorder
+  JOURNAL   Nature 413 (6855), 519-523 (2001)
+   PUBMED   11586359
+  REMARK    GeneRIF: FOXP2 is disrupted by a translocation in CS, a child with
+            severe speech/language disorder. Moreover, a point mutation,
+            altering a critical residue of the forkhead domain, segregates with
+            speech/language deficits in all 15 affected members of family KE.
+REFERENCE   20 (residues 1 to 715)
+  AUTHORS   Lai,C.S., Fisher,S.E., Hurst,J.A., Levy,E.R., Hodgson,S., Fox,M.,
+            Jeremiah,S., Povey,S., Jamison,D.C., Green,E.D., Vargha-Khadem,F.
+            and Monaco,A.P.
+  TITLE     The SPCH1 region on human 7q31: genomic characterization of the
+            critical interval and localization of translocations associated
+            with speech and language disorder
+  JOURNAL   Am. J. Hum. Genet. 67 (2), 357-368 (2000)
+   PUBMED   10880297
+REFERENCE   21 (residues 1 to 715)
+  AUTHORS   Margolis,R.L., Abraham,M.R., Gatchell,S.B., Li,S.H., Kidwai,A.S.,
+            Breschel,T.S., Stine,O.C., Callahan,C., McInnis,M.G. and Ross,C.A.
+  TITLE     cDNAs with long CAG trinucleotide repeats from human brain
+  JOURNAL   Hum. Genet. 100 (1), 114-122 (1997)
+   PUBMED   9225980
+COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
+            reference sequence was derived from AF337817.
+            
+            Summary: This gene encodes an evolutionarily conserved
+            transcription factor expressed in fetal and adult brain. This
+            transcription factor is a member of the forkhead/winged-helix (FOX)
+            family of transcription factors, and contains a FOX DNA-binding
+            domain and a large polyglutamine tract. Members of the FOX family
+            of transcription factors are regulators of embryogenesis. The
+            product of this gene is thought to be required for proper
+            development of speech and language regions of the brain during
+            embryogenesis. Although a point mutation in this gene has been
+            associated with the KE pedigree segregating developmental verbal
+            dyspraxia, no association between mutations in this gene and
+            another speech disorder, autism, has been found. Four alternative
+            transcripts encoding three different isoforms have been identified.
+            
+            Transcript Variant: This variant (1) encodes the predominant
+            isoform.
+FEATURES             Location/Qualifiers
+     source          1..715
+                     /organism="Homo sapiens"
+                     /db_xref="taxon:9606"
+                     /chromosome="7"
+                     /map="7q31"
+     Protein         1..715
+                     /product="forkhead box P2 isoform I"
+                     /note="trinucleotide repeat containing 10;
+                     forkhead/winged-helix transcription factor; speech and
+                     language disorder 1; CAG repeat protein 44"
+                     /calculated_mol_wt=79788
+     Region          152..191
+                     /region_name="polyglutamine tract"
+     Region          504..576
+                     /region_name="FH"
+                     /note="Forkhead (FH), also known as a 'winged helix'"
+                     /db_xref="CDD:28941"
+     CDS             1..715
+                     /gene="FOXP2"
+                     /coded_by="NM_014491.1:151..2298"
+                     /go_component="nucleus [goid 0005634] [evidence IEA]"
+                     /go_function="zinc ion binding [goid 0008270] [evidence
+                     IEA]"
+                     /go_function="metal ion binding [goid 0046872] [evidence
+                     IEA]"
+                     /go_function="nucleic acid binding [goid 0003676]
+                     [evidence IEA]"
+                     /go_function="sequence-specific DNA binding [goid 0043565]
+                     [evidence IEA]"
+                     /go_function="transcription factor activity [goid 0003700]
+                     [evidence IEA]"
+                     /go_process="transcription [goid 0006350] [evidence IEA]"
+                     /go_process="regulation of transcription, DNA-dependent
+                     [goid 0006355] [evidence IEA]"
+                     /note="isoform I is encoded by transcript variant 1"
+                     /db_xref="CCDS:CCDS5760.1"
+                     /db_xref="GeneID:93986"
+                     /db_xref="HGNC:13875"
+                     /db_xref="HPRD:HPRD_05611"
+                     /db_xref="MIM:605317"
+ORIGIN      
+        1 mmqesateti snssmnqngm stlssqldag srdgrssgdt ssevstvell hlqqqqalqa
+       61 arqlllqqqt sglkspkssd kqrplqvpvs vammtpqvit pqqmqqilqq qvlspqqlqa
+      121 llqqqqavml qqqqlqefyk kqqeqlhlql lqqqqqqqqq qqqqqqqqqq qqqqqqqqqq
+      181 qqqqqqqqqq qhpgkqakeq qqqqqqqqql aaqqlvfqqq llqmqqlqqq qhllslqrqg
+      241 lisippgqaa lpvqslpqag lspaeiqqlw kevtgvhsme dngikhggld lttnnssstt
+      301 ssntskaspp ithhsivngq ssvlsarrds ssheetgash tlyghgvckw pgcesicedf
+      361 gqflkhlnne halddrstaq crvqmqvvqq leiqlskere rlqammthlh mrpsepkpsp
+      421 kplnlvssvt msknmletsp qslpqtpttp tapvtpitqg psvitpasvp nvgairrrhs
+      481 dkynipmsse iapnyefykn advrppftya tlirqaimes sdrqltlnei yswftrtfay
+      541 frrnaatwkn avrhnlslhk cfvrvenvkg avwtvdevey qkrrsqkitg sptlvknipt
+      601 slgygaalna slqaalaess lpllsnpgli nnassgllqa vhedlngsld hidsngnssp
+      661 gcspqphihs ihvkeepvia ededcpmslv ttanhspele ddreieeepl sedle
+//

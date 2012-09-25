@@ -1,0 +1,66 @@
+
+PROGRAMS & LIBRARIES :
+
+* Check all output functions results (printf, putc, ...).
+* Load aa weights from extern data file.
+* Allow extra gaps chars `.', `?', `~' (in all formats ?).
+* Must convert all `..' to `. .' in GCG header.
+* Make thread safe libraries (msf+gcg).
+* Use valid gap characters according to each format.
+* Check nucleic NEXUS format names.
+* Check errors vs. normal end parsing.
+* New `-q' (quiet) flag to suppress format message.
+* New `-v' (verbose) flag to display all formats checks and results.
+* Fix memory leaks in FASTA and PHYLIPS format detections.
+* Make some sequence_t fields private.
+* Remove all `error_{fatal,warning}' calls from libraries.
+* Warn for truncated values (names, accessions, ...).
+* Check for sequence names output validity in each format.
+* Require at least 2 sequences in alignments, even with non strict mode.
+* Cannot handle matched token larger than 16kB.
+
+FORMATS :
+
+* ASN1: New sequence format from NCBI.
+* BAMBE: New alignment format (derived from PHYLIP).
+* CLUSTAL: Handle positions range after sequence names.
+* EMBL: Restore version parsing with new ID line format.
+* FASTA: Add NCBI header format parsing.
+* GENAL: New sequence format from GenAl program (may conflict with FASTA).
+* GENBANK: Cannot handle sequence bigger than 10Mb.
+* MAF: Multiple Alignment Format (from UCSC Genome Bioinformatics).
+* MEGA: Only a single dataset is supported.
+* NEXUS: Non interleaved format.
+* NEXUS: MESQUITE program seems to generate invalid format.
+* PHYLIP: Support for multiple alignments in the same file.
+* PHYLIP: Exercise sequence names cleanup.
+* PSA/XPSA: New alignment format from pftools package, cf. psa(5), xpsa(5).
+* RSF: New `Rich Sequence Format' format from GCG.
+* SELEX: New alignment format (STOCKHOLM like).
+* SPROT: Fix DE line output for new structured datas.
+
+DATABANKS :
+
+* EMBL: Some DE fields have terminal `.' and some do not.
+* EMBL: Duplicated `;' in authors list (AA279301 - rel_est_hum_01_r98.dat).
+* EMBL: Author name contains `;' (I13016 - rel_pat_unc_04_r98.dat).
+* EMBL: Invalid DOI value (EU275235 - rel_std_mam_01_r98.dat).
+
+* GENBANK: Keyword word splitted between 2 lines (L13724).
+* GENBANK: Invalid keywords separator `;  ' (U18916 - gbpln37.seq).
+* GENBANK: Splitted single keyword `SodCc; Le; 2 gene' (X87372 - ???).
+
+* GENBANK_WGS: CDS sequence miss indentation (CAAE01010487 - wgs.CAAE.gbff).
+
+* GENPEPT: Invalid keywords separator `;  ' (U18916_1 - gppln37.seq).
+
+* IMGT: Flat file has strange characters.
+* IMGT: Many trailing spaces.
+* IMGT: Primary accession number duplicated if secondary exists.
+
+* REFSEQ: Empty DBLINK line (NC_010162 - complete289.genomic.gbff).
+
+* UNIPROT: Ref 1 title has internal `"' (B2CI52 - uniprot_trembl.dat).
+* UNIPROT: Ref 2 title has internal `"' (Q50565 - uniprot_trembl.dat).
+* UNIPROT: Ref 1 title has internal `"' (Q4GX11 - uniprot_trembl.dat).
+

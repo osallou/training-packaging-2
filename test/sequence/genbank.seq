@@ -1,0 +1,34 @@
+LOCUS       HUMHBV1                  450 bp    DNA     linear   PRI 17-JUN-1993
+DEFINITION  Human DNA/endogenous Hepatitis B virus (HBV) DNA, left host viral
+            junction.
+ACCESSION   M15770
+VERSION     M15770.1  GI:183897
+KEYWORDS    .
+SEGMENT     1 of 2
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 450)
+  AUTHORS   Berger,I. and Shaul,Y.
+  TITLE     Integration of hepatitis B virus: analysis of unoccupied sites
+  JOURNAL   J. Virol. 61 (4), 1180-1186 (1987)
+   PUBMED   3029413
+COMMENT     Original source text: Human liver carcinoma DNA, cell line
+            PLC/PRF/5 (Alexander cells), clone AL-14.
+FEATURES             Location/Qualifiers
+     source          1..450
+                     /organism="Homo sapiens"
+                     /mol_type="genomic DNA"
+                     /db_xref="taxon:9606"
+ORIGIN      
+        1 agcgggcagt gcagctgctt ggacagcagg ggtgtttctt caacccaggc tgccctcctt
+       61 ctcctgtcac aacaggccca ttcaattctg aacctgcaag ccaactccaa tccaacccag
+      121 atcctcaaca atgtgccaga cgccaggtcc agaagcacgc acctaccatg ggggcctctt
+      181 cctcctttct ggacggggtt ccgctttggc ccctgatgct aacctcgccc cgtgtgccgt
+      241 gcagctggag tcaaacggag gcagagacgc catgaggtga caagccacac agcagggttc
+      301 agggcagcca ctccccactc cccactcccc actcccgcgg catctgtgcc ccacccgggt
+      361 gccaagccac tgtgccatgc atccccccac ccccaacctg ctgcaggtgt gtggcctttg
+      421 cctcttttcc cagggggaac caaaaaccct
+//

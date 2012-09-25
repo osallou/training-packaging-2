@@ -1,0 +1,364 @@
+#NEXUS
+[!Alignment of:]
+[Sequence     Start   End  Sequencetype]
+[btdDm        (30  >   414)   PROTEIN]
+[TSp1         (27  >   398)   PROTEIN]
+[DSP1         (14  >   444)   PROTEIN]
+[ostMm        (7  >   374)   PROTEIN]
+[Gg           (190  >   694)   PROTEIN]
+[Hosim        (7  >   401)   PROTEIN]
+[HsSp1        (1  >   706)   PROTEIN]
+[Sp3mm        (143  >   648)   PROTEIN]
+[HsSp4        (1  >   730)   PROTEIN]
+[SP5mm        (23  >   379)   PROTEIN]
+[SP6mm        (11  >   413)   PROTEIN]
+[SP7Hs        (7  >   377)   PROTEIN]
+[TIEG1        (58  >   452)   PROTEIN]
+[Tieg2        (65  >   477)   PROTEIN]
+[UKLF         (38  >   302)   PROTEIN]
+[EZF          (41  >   470)   PROTEIN]
+[BTEB2        (1  >   218)   PROTEIN]
+[rattus8can   (113  >   513)   PROTEIN]
+[Sp2-Hs       (1  >   606)   PROTEIN]
+
+begin data;
+  dimensions ntax=19 nchar=929;
+  format datatype=Protein interleave gap=- missing='.';
+  matrix
+[            1                                                      60]
+btdDm       ------------------------------------------------------------
+TSp1        ------------------------------------------------------------
+DSP1        ------------------------------------------------------------
+ostMm       ------------------------------------------------------------
+Gg          ------------------------------------------------------------
+Hosim       ------------------------------------------------------------
+HsSp1       QDHSMDEMTAVVKIEKGVGGNNGGNGNGGGAFSQARSSSTGSSSSTGGGGQESQPSPLAL
+Sp3mm       ------------------------------------------------------------
+HsSp4       -------MSDQKKEEEEEAAAAAAMATEGGKTSEPENNNKKPKT---SGSQDSQPSPLAL
+SP5mm       ------------------------------------------------------------
+SP6mm       ------------------------------------------------------------
+SP7Hs       ------------------------------------------------------------
+TIEG1       ------------------------------------------------------------
+Tieg2       ------------------------------------------------------------
+UKLF        ------------------------------------------------------------
+EZF         ------------------------------------------------------------
+BTEB2       ------------------------------------------------------------
+rattus8can  -------------------------------------------------GKGDQIKVTTQ
+Sp2-Hs      ------------------------------------------------------------
+
+[            61                                                      120]
+btdDm       ------------AQQQQHHLHMQQAQHH----------------LHLSH------QQAQQ
+TSp1        -------------------------AEH----------------PSLR--------GTPL
+DSP1        -------------------------QDH----------------PSLR--------GTPL
+ostMm       -------------------------EEE----------------AHYG--------SSPL
+Gg          --------------QETGQIQIIPGSNQ----------------TIIAS-------GSPS
+Hosim       -------------------------GEE----------------PRLG--------STPL
+HsSp1       LAATCSRIESPNENSNNSQGPSQSGGTGELDLTATQLSQGANGWQIISSSS----GATPT
+Sp3mm       --------------QENSQIQIIPGSNQ----------------TLLAS-------GTPP
+HsSp4       LAATCSKIGTPGENQATGQQQIIIDPSQGLVQLQNQPQQLELVTTQLAGNAWQLVASTPP
+SP5mm       --------------------------AS----------------PDLG-------KHSPL
+SP6mm       -------------------PPAASRRVW----------------LALG--------SCPL
+SP7Hs       -------------------------EEE----------------VHYG--------SSPL
+TIEG1       --------------KYVENRPVTPVS---------------------D--------LSEE
+Tieg2       --------------DLLRIRPLTPVSDS------------------GD--------VTTT
+UKLF        --------------ELERYLQTEPRR------------------------------ISET
+EZF         --------------HMKRLPPVLPGRPY------------------DL--------AAAT
+BTEB2       ----------------------MPSS------------------------------TNQT
+rattus8can  RRRRTLAPYRYPLPIFLFDRNIRKRKEE----------------PRLG--------STPL
+Sp2-Hs      ----------MAATAAVSPSDYLQPAAS----------------TTQDS------QPSPL
+
+[            121                                                      180]
+btdDm       QHMQHLTQQ--------------QQQQQQQQQQQ-----------QQ---------QQQQ
+TSp1        AMLAAQCNK------------LSNKSPPP--LAD-----AAVGK-GF---------HPWK
+DSP1        AMLAAQCNK------------LSNKSPPP--LAD-----AAVGK-GF---------HPWK
+ostMm       AMLTAACSK------------FGGSSP----LRDS----TTLGK-GG---------TKKP
+Gg          ANIQNILSQ------------SGQVQVQGVAIGG-----SSFPG-QA---------QVVA
+Hosim       AMLAATCNK------------IGSPSPSPSSLSDSS---SSFGK-GF---------HPWK
+HsSp1       SKEQSGSSTNGS---------NGSESSKNRTVSGGQYVVAAAPNLQN---------QQVL
+Sp3mm       ANIQNLIPQ------------TGQVQVQGVAIGG-----SSFPG-QT---------QVVA
+HsSp4       ASKENNVSQPASSSSSSSSSNNGSASPTKTKSGN-----SSTPG-QF---------QVIQ
+SP5mm       ALLAATCSR------------IGQPGAAAAPDFLQ---------------------VPYD
+SP6mm       PLESSPAHR------------AYERPS----VAHQ----PAVPG-AR---------RSLE
+SP7Hs       AMLTAACSK------------FGGSSP----LRDS----TTLGK-AG---------TKKP
+TIEG1       ENLLPGTP------------DFHTIPAFCLTPPYSP---SDFEP-SQ---------VSNL
+Tieg2       VHMDAATPELPK--------DFHSLSTLCITPPQSP---DLVEP-STRTP------VSPQ
+UKLF        FGEDLDCF-------------LHASPPPC---------------------------IEES
+EZF         VATDLESG-------------GAGAACGGSNLAPLP---RRETE-EFNDLLDLDFILSNS
+BTEB2       AAMDTLNV-------------SMSAAMAG---------------------------LN--
+rattus8can  AMLAATCNK------------IGSPSPSPSSLSDSS---SSFSK-GF---------HPWK
+Sp2-Hs      ALLAATCSK------------IGPPAVEAAVTPPAPP--QPTPR-KL---------VPIK
+
+[            181                                                      240]
+btdDm       QQQP------------------------------QQQ-QHDFLSAAAL------------
+TSp1        KSPQ------------------------------GAPSPSTTPSS--LPTQRTST-----
+DSP1        KSPNSPAAGSSGSSGGGGGGGGSSAGQHSPCAISAASSSSSSGSSGGQSSRSLSS-----
+ostMm       Y--------------------------------ADLSAPKTMGDAYPAPFSSTNG-----
+Gg          N-VP--LG--------------------------LPG-NITFVPINSVDLDSLG------
+Hosim       RSSSS-----------------------------SSASCNVVGSS--LSSFGVSG-----
+HsSp1       TGLPGVMPNIQYQVIPQ--------------FQTVDGQQLQFAATGAQVQQDGSGQIQII
+Sp3mm       N-VP--LG--------------------------LPG-NITFVPINSVDLDSLG------
+HsSp4       VQNP--SGSVQYQVIPQ--------------LQTVEGQQIQINPTSSSSLQDLQGQIKLI
+SP5mm       PA--------------------------------LGSPSRLFHPWTADMPAHSPG-----
+SP6mm       VPSE-----------------------------VPLTVPALTPPRIPAMLTAVCG-----
+SP7Hs       YSVG-----------------------------SDLSASKTMGDAYPAPFTSTNG-----
+TIEG1       MAPA------------------------------PSTVHFKSLSDTAKPHIAAPF-----
+Tieg2       VTDS------------------------------KACTATDVLQSSAVVARALSG-----
+UKLF        FRR-------------------------------LDPLLLPVEAAICEKSSAVD------
+EZF         LTHP------------------------------PESVAATVSSSASASSSSSPS-----
+BTEB2       -TH--------------------------------TS---AVPQTAVKQFQGMP------
+rattus8can  RSSSS-----------------------------SSGSCNVVGSS--LSSFGVSG-----
+Sp2-Hs      PAPLPLSPGK--NSFG-----------------ILSSKGNILQIQGSQLSASYPGGQLV-
+
+[            241                                                      300]
+btdDm       ----------------------------------LSAP----------------------
+TSp1        ---------SNPTYS----------------SRSVMTS-------C--------------
+DSP1        ---------SASTMVNIT------------ASRPLASS-------C--------------
+ostMm       ---------LLS----------------------PAGS-------P--------------
+Gg          --------LGSGSQT---------------MTAGINAD----------------------
+Hosim       ---------ASRNGG----------------SSSAAAA-------A--------------
+HsSp1       PGAN---QQIITNRG---------------SGGNIIAAMPNLLQQAVPLQG-----LANN
+Sp3mm       --------LSGSSQT---------------MTAGINAD----------------------
+HsSp4       SAGNNQAILTAANRT---------------ASGNILAQNLANQTVPVQIRPGVSIPLQLQ
+SP5mm       ---------ALPPP-----------------HPSLGLT-PQKTHLQ--------------
+SP6mm       ---------SLGSQH----------------TEAPHAS-------P--------------
+SP7Hs       ---------LLS----------------------PAGS-------P--------------
+TIEG1       ---------KEEE-------------------KSPVSA----------------------
+Tieg2       ---------GAERG-----------------LLGLEPV----------------------
+UKLF        ---------------------------------ILLSR----------------------
+EZF         ---------SSGPASA--------------PSTCSFTY----------------------
+BTEB2       ------------P--------------------CTYTM----------------------
+rattus8can  ---------ASRNG----------------------------------------------
+Sp2-Hs      --------FAIQNPTMINKGTRSNANIQYQAVPQIQASNSQTIQVQ--------------
+
+[            301                                                      360]
+btdDm       ------------------------PSLS----------------GSSSGSSSGSS--PLY
+TSp1        ------------------------SSVP---------------------TTASYG-----
+DSP1        ------------------------AAVGGGSTGSSSSASGSQSSSTASAVAAAYG-----
+ostMm       ------------------------P-----------------------APASGYA-----
+Gg          -----------------G------HLIN----------TGQAMDSSDNSERTGEQVSPEI
+Hosim       ------------------------AAAA--------------------AAAAALV-----
+HsSp1       VLSGQTQYVTNVPVALNG--NITLLPVNSVSAATLTP-SSQAVTISSSGSQESGSQPVTS
+Sp3mm       -----------------G------HLIN----------TGQAMDSSDNSERTGERVSPDV
+HsSp4       TLPGTQAQVVTTLPINIGGVTLALPVINNVAAGGGTGQVGQPAATADSGTSNGNQLVSTP
+SP5mm       ------------------------PSFG---------------AAHELPLTPPAD-----
+SP6mm       ------------------------PRLD------------LQPLQTYQGHTSPEA-----
+SP7Hs       ------------------------P-----------------------APTSGYA-----
+TIEG1       ------------------------PKLP----------------KAQATSVIRHT----A
+Tieg2       ------------------------PSSPC---------------RAKGTSVIRHT----G
+UKLF        ------------------------DK----------------------------------
+EZF         ------------------------PIRAGN-----------DPGVAPGGTGGGLL----Y
+BTEB2       ------------------------PS----------------------------------
+rattus8can  ------------------------------------------------------------
+Sp2-Hs      ------------------------PNLTNQIQ--------IIPGTNQAIITPSPS-----
+
+[            361                                                      420]
+btdDm       GKPPMKLELPYPQASS-----------TGTASPNSSIQSAPSSA------SVSPSIFPS-
+TSp1        SDLYFPGATS-QPPTD----------NSHVHHHQTSLLGKVEG--------AATHHLGS-
+DSP1        GDLYFP-NTS-TSNMD----------N---HHMHQGLLGKVE---------AGAAAFGG-
+ostMm       NDYP-PFP----HSFP----------GPTGAQDPGLLVPKG---------HSSSDCLPS-
+Gg          TETATDNDLFVPTSSSSQLPVTID--SSSILEQNANNLTTTSGQ------VHSSDLQGN-
+Hosim       SDSFSCGGSS-AHSQD----------G----SHQPVFISKVH---------TSVDGLQG-
+HsSp1       GTTISSASLVSSQASSSSFFTNANSYSTTTTTSNMGIMNFTTSG------SSGTNSQGQ-
+Sp3mm       NETNADTDLFVPTSSSSQLPVTID--STGILQQNTNSLTTTSGQ------VHSSDLQGN-
+HsSp4       TNTTTSASTMPESPSSSTTCTTTA--STSLTSSDTLVSSADTGQ------YASTSASSSE
+SP5mm       PSYPYEFSPVKMLPSSM---------AALPASCAPAYVPYAAQA----------ALPPG-
+SP6mm       GDYPSPLQPGELQSLPL---------GPEVDFSQGYELPGASSRVTCEDLESDSPLAPG-
+SP7Hs       NDYP-PFS----HSFP----------GPTGTQDPGLLVPKG---------HSSSDCLPS-
+TIEG1       DAQLCNHQTCPMKAAS----------ILNYQNNSFRRRTHLNVE------AARKNIPCA-
+Tieg2       ESPAACFPTIQTPDCR----------LSDSREGEEQLLGHFETL------QD-THLTDS-
+UKLF        ---------------------------------------LLS--------ETCLSLQP--
+EZF         GRESAPPPTAPFNLAD----------INDVSPSGGFVAELLRPE------LDPVYIPPQ-
+BTEB2       --------------------------------------QFLP--------QQATYFPP--
+rattus8can  -----------AHSQD----------S----SHQPVFISKVH---------TSVDGLQG-
+Sp2-Hs      SHKPVPIKPAPIQKSST---------TTTPVQSGANVVKLTGGGG-----NVTLTLPVNN
+
+[            421                                                      480]
+btdDm       ------------------------------------------------------------
+TSp1        ---------------------------------------------------------VYS
+DSP1        ---------------------------------------------------------VYS
+ostMm       ---------------------------------------------------------VYT
+Gg          ----YIQTSVSDDTQAQN--------IQVSTAQP-------IVQHIQLQESQQP--TSQA
+Hosim       ---------------------------------------------------------IYP
+HsSp1       ---TPQRVSGLQGSDALN--------IQQNQTSGGSLQAGQQKEGEQNQQTQQQQILIQP
+Sp3mm       ----YIQSPVSEETQAQN--------IQVSTAQP-------VVQHLQLQDSQQP--TSQA
+HsSp4       RTIEESQTPAATESEAQSSSQLHANGMQNQQDQSNSLQQVQIVGQPILQQIQIQ--QPQQ
+SP5mm       ----------------------------------------------------------YS
+SP6mm       ---------------------------------------------------------PFS
+SP7Hs       ---------------------------------------------------------VYT
+TIEG1       ---------------------------------------------------------AVS
+Tieg2       ---------------------------------------------------------LLS
+UKLF        ------------------------------------------------------------
+EZF         ---------------------------------------------------------QPQ
+BTEB2       ------------------------------------------------------------
+rattus8can  ---------------------------------------------------------IYP
+Sp2-Hs      -------------------------------------------------LVNASDTGAPT
+
+[            481                                                      540]
+btdDm       -------PAQSFAS------------ISAS----P----------STPTTTLAPPTTAAA
+TSp1        R--------HPYES-----------WPFN-----TMSGATHHGG--I-----KSDSV-TS
+DSP1        R--------HPYD------------WPFN--------AVTHK----------EAASV-NS
+ostMm       SL----DMTHPYGS-----------WYKAG----IHAGISPGP----------GNTP-TP
+Gg          QIVQG-IAQQTIHG---VQAS---QSISPQ----ALQNLQLQ-L-NPGTFLIQAQTVTPS
+Hosim       RV----GMAHPYES-----------WFKP-----SHPGLGAAG---------EVGSA-GA
+HsSp1       QLVQGGQALQALQAAPLSGQTFTTQAISQE----TLQNLQLQAVPNSGPIIIRTPTVGPN
+Sp3mm       QIVQG-ITPQTIHG---VQASG--QNISQQ----ALQNLQLQ-L-NPGTFLIQAQTVTPS
+HsSp4       QIIQA-IPPQSFQLQ--SGQTI--QTIQQQ----PLQNVQLQAV-NPTQVLIRAPTLTPS
+SP5mm       NLLPP-PPPPPPPP-----------TCRQL----SPAPAPDDLP----------------
+SP6mm       KLLQP-DMSHHYES-----------WFRP-----THPGAEDG-------------S----
+SP7Hs       SL----DMTHPYGS-----------WYKAG----IHAGISPGP----------GNTP-TP
+TIEG1       P------NRSKCER----------NTVAD----VDEKASAAL----------YDFSVPSS
+Tieg2       T------NLVSCQP----------CLHKSGGLLLTDKGQQAG----------WPGAVQTC
+UKLF        ----------------------------------ASSSLD-------------------S
+EZF         P------PGGGLMG----------KFVLKAS--LSAPGSEYG----------SPSVISVS
+BTEB2       ----------------------------------SPPSSE-------------P------
+rattus8can  RV----GMAHPYES-----------WFKP-----SHPGLGAAA---------DVGSA-GA
+Sp2-Hs      QLLTE-SPPTPLSK-----------TNKKA----RKKSLPASQP--PVAVAEQVETVLIE
+
+[            541                                                      600]
+btdDm       G-------ALAGSP-------------------TSSSPSSS------------AASAAAA
+TSp1        N--AWWDVHS------------------T--GSWLDMSG----------------GMH-Q
+DSP1        ---GWWDMHS-----------------AA--GSWLDMGG---A------------GMHST
+ostMm       ----WWDMHPGGNWL---GGGQGQGDGLQ--GTLSTGPAQP--------------PLNPQ
+Gg          GQITWQTFQVQGVQN--LQNLQIQNA-PG--QQITLTPVQT-----------LTLGQVAA
+Hosim       S--SWWDVGAGWIDV---QNPNSAA-ALP--GSLHPAAGGLQT------------SLHSP
+HsSp1       GQVSWQTLQLQNLQ---VQNPQAQTITLAPMQGVSLGQTSSSN---------TTLTPIAS
+Sp3mm       GQITWQTFQVQGVQN--LQNLQIQNT-AA--QQITLTPVQT-----------LTLGQVAA
+HsSp4       GQISWQTVQVQNIQS--LSNLQVQNAGLS--QQLTITPVSSSGG--------TTLAQIAP
+SP5mm       ----WWSIPQSG------AGPGSSG-----------VPGTS---------------LSSA
+SP6mm       ----WWDLHPGTSWM---DLPHTQG-------ALTS-PGHPG-------------ALQAG
+SP7Hs       ----WWDMHPGGNWL---GGGQGQGDGLQ--GTLPTGPAQP--------------PLNPQ
+TIEG1       ------ETVICRSQP---APVSPQQ------KSVLVSPPA---------------VSAGG
+Tieg2       ------SPKNYENDL---PRKTTPL------ISVSVPAPP---------------VLCQM
+UKLF        ------YTAVN------------Q-------------------------------AQLNA
+EZF         ------KGSPDGSHP---VVVAPYN------GGPPRTCPK---------------IKQEA
+BTEB2       -------GSPD------------R--------------------------------QAEM
+rattus8can  S--SWWDVGAGWIDV---QNPNGAA-ALP--GSLHPAAGGLQT------------SLHSP
+Sp2-Hs      T--TADNIIQAGNNLLIVQSPGGGQPAVV--QQVQVVPPKAEQQQVVQIPQQALRVVQAA
+
+[            601                                                      660]
+btdDm       AAAAAAAAADLGAAAVASA------------------AYGWNTAYSGLGPARSQFP----
+TSp1        MANYSTDYSSL--------------------------THSLAASNHLLSSG--QHLL---
+DSP1        MANYASEN------------------------------YSSALSHSLLGSG--QHLL---
+ostMm       LPTYPSDFAPLN-------------------------PAPYPAPHLLQPGP--QHVL---
+Gg          GGALTSTPVSLSTAQLP---------------------NLQTVTVNSIDSAGIQLH----
+Hosim       LGGYNSDYSGLSHS-----------------------AFSSGASSHLLSPA--GQHL---
+HsSp1       AASIPAGTVTVNAAQLSSM------------------PGLQTINLSALGTSGIQVH----
+Sp3mm       GGALTSTPVSLSTGQLP---------------------NLQTVTVNSIDSTGIQLH----
+HsSp4       -VAVAGAPITLNTAQLASV------------------PNLQTVSVANLGAAGVQVQGVPV
+SP5mm       CAGPPHAPRFPAS----------------------------AAAAAAAAAALQRGLVL--
+SP6mm       LGGYVGDHQLCA-------------------------PPPHPHAHHLLPAAGGQHLLG--
+SP7Hs       LPTYPSDFAPLN-------------------------PAPYPAPHLLQPGP--QHVL---
+TIEG1       VPPMPVICQMVPLP--A--------------------NNPVVTTVVPSTPPSQPPAVC--
+Tieg2       IP-VTGQSSMLPAF--L--------------------KPPPQLSVGTVRPILAQAAPA--
+UKLF        VTSLT-----PP------------------------------SS---------PELSR--
+EZF         VSSCTHLGAGPPLS--N--------------------GHRPAAHNFPLGRQL-PSRST--
+BTEB2       LQNLT-----PP------------------------------PS----------------
+rattus8can  LGGYNSDYSGLSHS-----------------------AFSSGASSHLLSPA--GQHL---
+Sp2-Hs      SATLPTVPQKPSQNFQIQAAEPTPTQVYIRTPSGEVQTVLVQDSPPATAAATSNTTCS--
+
+[            661                                                      720]
+btdDm       -------YAQYASDYYGNAVGMSSSAAWFSHQER--------LYQPWSSQSYPGFN----
+TSp1        ------------QDTYKSMLPGAQT---VGASFG---------LHATGSAPSPTAG----
+DSP1        ------------QDTYKSMLPGQGVGVGVGVGMGGFSLPHSSPSAAAAAAATAAAA----
+ostMm       -----------PQDVYKPKAVGNSG-----QLEG----------SGAAKPPRGAG-----
+Gg          -----QGENAGSPADIRIKEEEPDPEEWQLSGDS-----TLNTNDLTHLRVQVVDE----
+Hosim       ------------MDGFKPVLPGSYPDSAPSPLAG---------AGGSMLSAGPSAP----
+HsSp1       -------PIQGLPLAIANAPGDHG-AQLGLHGAG------GDGIHDDTAGGEEGEN----
+Sp3mm       -----PGENADSPADIRIKEEEPDPEEWQLSGDS-----TLNTNDLTHLRVQVVDE----
+HsSp4       TITSVAGQQQGQ-DGVKVQQATIAPVTVAVGGIANATIGAVSPDQLTQVHLQQGQQ----
+SP5mm       -----------GPSDFAQYQS---------QIAA---------LLQTKAPLAATA-----
+SP6mm       -----------PPDGAKALEVAAP--------ES----------QGLDSSLDGAAR----
+SP7Hs       -----------PQDVYKPKAVGNSG-----QLEG----------SGGAKPPRGAS-----
+TIEG1       -----------PPVVFMGTQVPKG-AVMFVVPQP--------VVQSSKP---PVVS----
+Tieg2       -----------PQPVFVGPAVPQG-AVMLVLPQG--------ALPPPAPCAANVMA----
+UKLF        -----------HLVKTSQTLSAVDGTVTLKLVAK--------KAALSSVKVGGVAT----
+EZF         -----------PTLGFEEVLSSRECHPALPLPPG--------FHPHPGPNYPSFLP----
+BTEB2       ---------------YAATIASK-----LAIHN---------------PNLPTTLP----
+rattus8can  ------------MDGFKPVLPGSYPDSAPSPLAG---------AGSSMLSAGPAAP----
+Sp2-Hs      -----------SPASRAPHLSGTSK----KHSAA---------ILRKERPLPKIAPAGSI
+
+[            721                                                      780]
+btdDm       ----------------------------------FDDIA---------------------
+TSp1        ----------------------------------AGGLP---------------------
+DSP1        ----------------------------------AGGSPQ--------------------
+ostMm       ----------------------------------TGGSG---------------------
+Gg          ----------------------------------EGDQP---------------------
+Hosim       ----------------------------------LGGSP---------------------
+HsSp1       ----------------------------------SPDAQ---------------------
+Sp3mm       ----------------------------------EGDQQ---------------------
+HsSp4       ----------------------------------TSDQE---------------------
+SP5mm       ------------------------------------------------------------
+SP6mm       ----------------------------------PKGSR---------------------
+SP7Hs       ----------------------------------TGGSG---------------------
+TIEG1       ----------------------------------PNGT----------------------
+Tieg2       ----------------------------------AGNT----------------------
+UKLF        ----------------------------------AAAAV---------------------
+EZF         ----------------------------------DQMQP---------------------
+BTEB2       ----------------------------------VNSQ----------------------
+rattus8can  ----------------------------------LGGSP---------------------
+Sp2-Hs      ISLNAAQLAAAAQAMQTININGVQVQGVPVTITNTGGQQQLTVQNVSGNNLTISGLSPTQ
+
+[            781                                                      840]
+btdDm       ------------FQTQLQRRSVRCTCPNCTN-EMSGLPPIVGPDE--RGRK--------Q
+TSp1        ------PQVPSPRSQRRYTGRATCDCPNCQEAERLGP----AGVH--LRKKN-------I
+DSP1        ---GGSPSTPSPRSQRRYAGRATCDCPNCQEAERLGP----AGVH--LRKKN-------I
+ostMm       ------------GYAGSGAGRSTCDCPNCQELERLGA----AAA--GLRKKP-------I
+Gg          ------------HQEGKRLRRVACTCPNCK--EGGGR----GSN---LGKKK-------Q
+Hosim       ------R-----SSARRYSGRATCDCPNCQEAERLGP----AGAS--LRRKG-------L
+HsSp1       ------------PQAGRRTRREACTCPYCK--DSEGR----GSGD--PGKKK-------Q
+Sp3mm       ------------HQEGKRLRRVACTCPNCK--EGGGR----GTN---LGKKK-------Q
+HsSp4       ------------VQPGKRLRRVACSCPNCR--EGEGR----GSNE--PGKKK-------Q
+SP5mm       ------------------RRCRRCRCPNCQAAGGAPE----AEP----GKKK-------Q
+SP6mm       ------------RSVPRSSGQTVCRCPNCLEAERLGA----PCGPDGGKKKH-------L
+SP7Hs       ------------GYGGSGAGRSSCDCPNCQELERLGA----AAA--GLRKKP-------I
+TIEG1       --------------RLSPIAPAPGFSPSAAKVTPQID-----SS----RIR--------S
+Tieg2       --------------KLLPLAPAPVFITSSQNCVPQVD-----FS----RRR--------N
+UKLF        -------------TAAGAVKSGQSDSDQGGLGAEACP-----EN----KKR--------V
+EZF         --------------QVPPLHYQELMPPGSCMPEEPKP-----KR----GRRSWPRKRTAT
+BTEB2       --------------NIQPVRYNRRSNP--DL-EK---------------RR--------I
+rattus8can  ------R-----SSARRYSGRATCDCPNCQEAERLGP----AGAS--LRRKG-------L
+Sp2-Hs      IQLQMEQALAGETQPGEKRRRMACTCPNCKD-GEKRS----GEQ----GKKK--------
+
+[            841                                                      900]
+btdDm       HICHIPGCERLYGKASHLKTHLRWHTGERPFLC--LTCGKRFSRSDELQRHGRTHTNYRP
+TSp1        HSCHIPGCGKVYGKTSHLKAHLRWHTGERPFVCNWLFCGKRFTRSDELQRHLRTHTGEKR
+DSP1        HSCHIPGCGKVYGKTSHLKAHLRWHTGERPFVCNWLFCGKRFTRSDELQRHLRTHTGEKR
+ostMm       HSCHIPGCGKVYGKASHLKAHLRWHTGERPFVCNWLFCGKRFTRSDELERHVRTHTREKK
+Gg          HICHIPGCGKVYGKTSHLRAHLRWHSGERPFVCNWMFCGKRFTRSDELQRHRRTHTGEKK
+Hosim       HSCHIPGCGKVYGKTSHLKAHLRWHTGERPFVCNWLFCGKRFTRSDELQRHLRTHTGEKR
+HsSp1       HICHIQGCGKVYGKTSHLRAHLRWHTGERPFMCTWSYCGKRFTRSDELQRHKRTHTGEKK
+Sp3mm       HICHIPGCGKVYGKTSHLRAHLRWHSGERPFICNWMFCGKRFTRSDELQRHRRTHTGEKK
+HsSp4       HICHIEGCGKVYGKTSHLRAHLRWHTGERPFICNWMFCGKRFTRSDELQRHRRTHTGEKR
+SP5mm       HVCHVPGCGKVYGKTSHLKAHLRWHTGERPFVCNWLFCGKSFTRSDELQRHLRTHTGEKR
+SP6mm       HNCHIPGCGKAYAKTSHLKAHLRWHSGDRPFVCNWLFCGKRFTRSDELQRHLQTHTGTKK
+SP7Hs       HSCHIPGCGKVYGKASHLKAHLRWHTGERPFVCNWLFCGKRFTRSDELERHVRTHTREKK
+TIEG1       HICSHPGCGKTYFKSSHLKAHTRTHTGEKPFSCSWKGCERRFARSDELSRHRRTHTGEKK
+Tieg2       YVCSFPGCRKTYFKSSHLKAHLRTHTGEKPFNCSWDGCDKKFARSDELSRHRRTHTGEKK
+UKLF        HRCQFNGCRKVYTKSSHLKAHQRTHTGEKPYKCSWEGCEWRFARSDELTRHYRKHTGAKP
+EZF         HTCDYAGCGKTYTKSSHLKAHLRTHTGEKPYHCDWDGCGWKFARSDELTRHYRKHTGHRP
+BTEB2       HYCDYPGCTKVYTKSSHLKAHLRTHTGEKPYKCTWEGCDWRFARSDELTRHYRKHTGAKP
+rattus8can  HSCHIPGCGKVYGKTSHLKAHLRWHTGERPFVCNWLFCGKRFTRSDELQRHLRTHTGEKR
+Sp2-Hs      HVCHIPDCGKTFRKTSLLRAHVRLHTGERPFVCNWFFCGKRFTRSDELQRHARTHTGDKR
+
+[            901                              929]
+btdDm       YACPICSKKFSRSDHLSKHKKTHF-----
+TSp1        FACPICNKRFMRSDHLAKHVKTHN-----
+DSP1        FACPVCNKRFMRSDHLAKHVKTHN-----
+ostMm       FTCLLCSKRFTRSDHLSKHQRTHG-----
+Gg          FVCPECSKRFMRSDHLAKHIKTHQ-----
+Hosim       FACPVCNKRFMRSDHLSKHVKTHS-----
+HsSp1       FACPECPKRFMRSDHLSKHIKTHQ-----
+Sp3mm       FVCPECSKRFMRSDHLAKHIKTHQ-----
+HsSp4       FECPECSKRFMRSDHLSKHVKTHQ-----
+SP5mm       FACPECGKRFMRSDHLAKHVKTHQ-----
+SP6mm       FPCAVCSRVFMRSDHLAKHMKTHE-----
+SP7Hs       FTCLLCSKRFTRSDHLSKHQRTHG-----
+TIEG1       FACPMCDRRFMRSDHLTKHARRHL-----
+Tieg2       FVCPVCDRRFMRSDHLTKHARRHM-----
+UKLF        FKCNHCDRCFSRSDHLALHMKRHI-----
+EZF         FQCQKCDRAFSRSDHLALHMKRHF-----
+BTEB2       FQCGVCNRSFSRSDHLALHMKRHQ-----
+rattus8can  FACPVCNKRFMRSDHLSKHVKTHS-----
+Sp2-Hs      FECAQCQKRFMRSDHLTKHYKTHLVTKNL
+    ;
+endblock;

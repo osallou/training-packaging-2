@@ -1,0 +1,113 @@
+
+=pod
+
+=head1 NAME
+
+=over 4
+
+=item B<squizz>  Sequence format checker
+
+=back
+
+=head SYNOPSIS
+
+=over 4
+
+=item B<squizz> [B<-AShlns>] [B<-c> F<format>] [B<-f> F<format>]
+F<file>
+
+=back
+
+=head1 OPTIONS
+
+Following command line options are allowed:
+
+=over 4
+
+=item -A
+
+Restrict detection/verification to alignment formats (conflict with
+B<-S> option).
+
+=item -S
+
+Restrict detection/verification to sequence formats (conflict with
+B<-A> option).
+
+=item -c F<format>
+
+Convert detected sequence/alignment into F<format>. This option
+implies strict alignment checking.
+
+=item -f F<format>
+
+Assume input format is F<format>. Do not try to detect the format,
+just verify that the given one is correct.
+
+=item -h
+
+Usage display.
+
+=item -l
+
+List all supported formats.
+
+=item -n
+
+Count and report detected entries. This option is only available when
+the detection is restricted to a single type (with B<-A> or B<-S>
+options) and strict checks (without B<-s> option) are enabled.
+
+=item -s
+
+Disable strict format checks (enabled by default).
+
+=back
+
+=head1 DESCRIPTION
+
+B<squizz> is a sequence format file checker, but it has some
+conversion capabilities too.
+
+B<squizz> can detect the most common sequence and alignment formats :
+
+* B<EMBL>, B<FASTA>, B<GCG>, B<GDE>, B<GENBANK>, B<IG>, B<NBRF>, B<PIR>
+(codata), B<RAW>, and B<SWISSPROT>.
+
+* B<CLUSTAL>, B<FASTA>, B<MSF>, B<NEXUS>, B<PHYLIP> (interleaved and
+sequential) and B<STOCKHOLM>.
+
+B<squizz> can do some conversions too, if the format the input format
+is supported. Only 3 types are available : sequence to sequence,
+alignment to alignment, and alignment to sequence (the last one,
+sequence to alignment, require multiple alignments algorithms and
+cannot be handled with formatting tools).
+
+Strict format checks validate the previously detected objects, by
+making some sanity checks:
+
+=over 4
+
+=item - sequence strings must exists.
+
+=item - alignment is made of more than one sequence.
+
+=item - alignment sequence strings must have the same length.
+
+=item - alignment sequence names must exists, and be unique.
+
+=back
+
+=head1 SEE ALSO
+
+=over 4
+
+=item B<seqfmt>(5), B<alifmt>(5)
+
+=back
+
+=head1 AUTHOR
+
+Nicolas Joly (njoly@pasteur.fr), Institut Pasteur.
+
+=cut

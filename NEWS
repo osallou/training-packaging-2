@@ -1,0 +1,21 @@
+What's new in 1.00:
+
+* GENBANK:
+  - Add support for RefSeq DBLINK keyword.
+* MEGA:
+  - Support old statement formatted title lines.
+  - Handle identical character `.' in sequences.
+* NEXUS:
+  - Allow sequence names with spaces.
+* RAW:
+  - Allow gaps in sequence (mostly for consistency with other formats).
+* SWISSPROT:
+  - Add support for UniProtKB release 14.0 DE line.
+
+* All alignmnent formats correctly output sequences with spaces in
+  their names.
+
+What's new in 0.99:
+
+* This is the first version. Everything new ...
+

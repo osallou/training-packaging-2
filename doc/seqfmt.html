@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>seqfmt</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div id="index">
+<p><a name="__index__"></a></p>
+<!--
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+</ul>
+
+-->
+
+
+</div>
+<!-- INDEX END -->
+
+<p>This document illustrates some common formats used for sequences
+representation.</p>
+<dl>
+<dt><strong><a name="embl" class="item"><strong>EMBL</strong></a></strong></dt>
+
+<dd>
+<pre>
+ID   MMVASPHOS  standard; RNA; EST; 140 BP.
+AC   X97897;
+DE   M.musculus mRNA for protein homologous to
+DE   vasodilator-stimulated phosphoprotein
+SQ   Sequence 140 BP; 25 A; 58 C; 39 G; 17 T; 1 other;
+     ttctcccaga agctgactct atggngaccc cgagagagac tgagcagaac      60
+     ccccgcaccc ctgcacttcc aatcaggggc gccccgggag cactccccgt     120
+     ccgccctccg cgcagccatg                                      140
+//</pre>
+</dd>
+<dt><strong><a name="fasta" class="item"><strong>FASTA</strong></a></strong></dt>
+
+<dd>
+<pre>
+&gt;MMVASPHOS
+ttctcccagaagctgactctatggngaccccgagagagactgagcagaacctggagccag
+ccccgcacccctgcacttccaatcaggggcgccccgggagcactccccgtggcgcgccgc
+ccgccctccgcgcagccatg</pre>
+</dd>
+<dt><strong><a name="gcg" class="item"><strong>GCG</strong></a></strong></dt>
+
+<dd>
+<pre>
+!!NA_SEQUENCE 1.0
+ (No documentation)
+dna1.txt  Length: 88  Nov 22, 2001 14:38  Type: N  Check: 3818  ..</pre>
+<pre>
+       1  TAGTCGTAGT CGGAGCGATG CTGACGATGA CGATGACGAT CGTAGCTGAT</pre>
+<pre>
+      51  CGATCGAGCT GATGCTGATC GAGCTAGCTG ATCGATCG</pre>
+</dd>
+<dt><strong><a name="gde" class="item"><strong>GDE</strong></a></strong></dt>
+
+<dd>
+<pre>
+#sample1
+TTCAAGAGAAACAGCGGCCAAGGAAAAGACTCGGCATGATTGTCCATAGCTTACAAAGCG
+#sample2
+TTCAAGAGAAACAGCGGCTGGGGGAAAGACTCGTCCTGATTGCCTGTAGATGGTAAAGCG</pre>
+</dd>
+<dt><strong><a name="genbank" class="item"><strong>GENBANK</strong></a></strong></dt>
+
+<dd>
+<pre>
+LOCUS       HUMHBV1       130 bp    DNA         PRI     17-JUN-1993
+DEFINITION  Human DNA/endogenous Hepatitis B virus (HBV) DNA, left
+            host viral junction.
+ACCESSION   M15770
+BASE COUNT       32 a     43 c     29 g     26 t
+ORIGIN
+      1 agcgggcagt gcagctgctt ggacagcagg ggtgtttctt caacccaggc
+     61 ctcctgtcac aacaggccca ttcaattctg aacctgcaag ccaactccaa
+    121 cctcttttcc cagggggaac caaaaaccct
+//</pre>
+</dd>
+<dt><strong><a name="ig" class="item"><strong>IG</strong></a></strong></dt>
+
+<dd>
+<pre>
+; comment
+U03518
+AACCTGCGGAAGGATCATTACCGAGTGCGGGTCCTTTGGGCCCAACCTCCCATCCGTGTC
+TATTGTACCCTGTTGCTTCGGCGGGCCCGCCGCTTGTCGGCCGCCGGGGGGGCGCCTCTG
+TGAGTTGATTGAATGCAATCAGTTAAAACTTTCAACAATGGATCTCTTGGTTCCGGC1</pre>
+</dd>
+<dt><strong><a name="nbrf" class="item"><strong>NBRF</strong></a></strong></dt>
+
+<dd>
+<pre>
+&gt;P1;CCHU
+cytochrome c [validated] - human
+MGDVEKGKKIFIMKCSQCHTVEKGGKHKTGPNLHGLFGRKTGQAPGYSYTAANKNKGIIW
+GEDTLMEYLENPKKYIPGTKMIFVGIKKKEERADLIAYLKKATNE*</pre>
+</dd>
+<dt><strong><a name="pir" class="item"><strong>PIR</strong></a></strong></dt>
+
+<dd>
+<pre>
+ENTRY          CCHU  #type complete
+TITLE          cytochrome c [validated] - human
+ACCESSIONS     A31764; A05676; I55192; A00001
+SUMMARY        #length 105  #molecular-weight 11749  #checksum 3247
+SEQUENCE
+                5        10        15        20        25        30
+      1 M G D V E K G K K I F I M K C S Q C H T V E K G G K H K T G
+     31 P N L H G L F G R K T G Q A P G Y S Y T A A N K N K G I I W
+     61 G E D T L M E Y L E N P K K Y I P G T K M I F V G I K K K E
+     91 E R A D L I A Y L K K A T N E
+///</pre>
+</dd>
+<dt><strong><a name="raw" class="item"><strong>RAW</strong></a></strong></dt>
+
+<dd>
+<pre>
+ttctcccagaagctgactctatggngaccccgagagagactgagcagaacctggagccag
+ccccgcacccctgcacttccaatcaggggcgccccgggagcactccccgtggcgcgccgc
+ccgccctccgcgcagccatg</pre>
+<p><strong>Warning</strong>: This format cannot handle more than one sequence per file.</p>
+</dd>
+<dt><strong><a name="swissprot" class="item"><strong>SWISSPROT</strong></a></strong></dt>
+
+<dd>
+<pre>
+ID   100K_RAT       STANDARD;      PRT;   149 AA.
+AC   Q62671;
+DE   100 kDa protein (EC 6.3.2.-).
+SQ   SEQUENCE   149 AA;  17004 MW;  D06484B8BC29112E CRC64;
+     MMSARGDFLN YALSLMRSHN DEHSDVLPVL DVCSLKHVAY VFQALIYWIK
+     PQLERKRTRE LLELGIDNED SEHENDDDTS QSATLNDKDD ESLPAETGQN
+     SITIRPPDDQ HLPTANTCIS RLYVPLYSSK QILKQKLLLA IKTKNFGFV
+//</pre>
+</dd>
+</dl>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>alifmt</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+</head>
+
+<body style="background-color: white">
+
+
+<!-- INDEX BEGIN -->
+<div id="index">
+<p><a name="__index__"></a></p>
+<!--
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+</ul>
+
+-->
+
+
+</div>
+<!-- INDEX END -->
+
+<p>This document illustrates some common formats used for aligned sequences
+representation.</p>
+<dl>
+<dt><strong><a name="clustal" class="item"><strong>CLUSTAL</strong></a></strong></dt>
+
+<dd>
+<pre>
+CLUSTAL W (1.82) multiple sequence alignment</pre>
+<pre>
+MALK_ECOLI      MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTL
+MALK_SALTY      MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTL
+MALK_ENTAE      MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTL
+MALK_PHOLU      MSSVTLRNVSKAYGETIISKNINLEIQEGEF--------------
+                *:** *:**:**:*:.::**:***:*::***</pre>
+<pre>
+MALK_ECOLI      LRMIAGLETITSGDLACRRLHKEPGV
+MALK_SALTY      LRMIAGLETITSGDLACRRLHQEPGV
+MALK_ENTAE      LRMIAGLETVTSGDL-----------
+MALK_PHOLU      LRM-----------------------
+                ***</pre>
+<p><strong>Warning</strong>: Names must not contain spaces or exceed 30 characters.</p>
+</dd>
+<dt><strong><a name="fasta" class="item"><strong>FASTA</strong></a></strong></dt>
+
+<dd>
+<pre>
+&gt;MALK_ECOLI
+MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTLLRMIA
+GLETITSGDLACRRLHKEPGV
+&gt;MALK_SALTY
+MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTLLRMIA
+GLETITSGDLACRRLHQEPGV
+&gt;MALK_ENTAE
+MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTLLRMIA
+GLETVTSGDL-----------
+&gt;MALK_PHOLU
+MSSVTLRNVSKAYGETIISKNINLEIQEGEF--------------LRM--
+---------------------</pre>
+</dd>
+<dt><strong><a name="mega" class="item"><strong>MEGA</strong></a></strong></dt>
+
+<dd>
+<pre>
+#mega
+!Title Multiple Sequence Alignment;</pre>
+<pre>
+#MALK_ECOLI
+MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTLLRMIA
+GLETITSGDLACRRLHKEPGV
+#MALK_SALTY
+MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTLLRMIA
+GLETITSGDLACRRLHQEPGV
+#MALK_ENTAE
+MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTLLRMIA
+GLETVTSGDL-----------
+#MALK_PHOLU
+MSSVTLRNVSKAYGETIISKNINLEIQEGEF-------------------
+---------------------</pre>
+</dd>
+<dt><strong><a name="msf" class="item"><strong>MSF</strong></a></strong></dt>
+
+<dd>
+<pre>
+!!AA_MULTIPLE_ALIGNMENT 1.0
+PileUp of: @pep.list</pre>
+<pre>
+ msf.seq       MSF: 55  Type: P  Nov 22, 2001 11:02  Check: 2529 ..</pre>
+<pre>
+ Name: m73237           Len:   655  Check: 7493  Weight:  1.00
+ Name: l28824           Len:   655  Check: 5456  Weight:  1.00
+ Name: u04379           Len:   655  Check: 9580  Weight:  1.00</pre>
+<pre>
+//</pre>
+<pre>
+        1                                                   50
+m73237  ~~~~~MADSA NHLPFFFGQI TREEAEDYLV QGGMSDGLYL LRQSRNYLGG
+l28824  MASSGMADSA NHLPFFFGNI TREEAEDYLV QGGMSDGLYL LRQSRNYLGG
+u04379  ~~~~~MPDPA AHLPFFYGSI SRAEAEEHLK LAGMADGLFL LRQCLRSLGG</pre>
+<pre>
+        51
+m73237  ~~~~~
+l28824  ~~~~~
+u04379  AACG*</pre>
+<p><strong>Warning</strong>: This format cannot handle more than 500 sequences in a
+single alignment.</p>
+</dd>
+<dt><strong><a name="nexus" class="item"><strong>NEXUS</strong></a></strong></dt>
+
+<dd>
+<pre>
+#NEXUS</pre>
+<pre>
+begin data;
+  dimensions ntax=2 nchar=89;
+  format datatype=Protein interleave gap=- missing='.';
+  matrix
+[           1                                               50]
+btdDm       -------AQQQQHHLHMQQAQHH-----------LHLSH------QQAQQ
+TSp1        --------------------AEH-----------PSLR--------GTPL</pre>
+<pre>
+[           51                          80]
+btdDm       YACPICSKKFSRSDHLSKHKKTHF------
+TSp1        FACPICNKRFMRSDHLAKHVKTHN------</pre>
+<pre>
+    ;
+endblock;</pre>
+<p><strong>Warning</strong>: Text enclosed in brackets is considered as comment, and
+thus ignored.</p>
+</dd>
+<dt><strong><a name="phylip" class="item"><strong>PHYLIP</strong></a></strong></dt>
+
+<dd>
+<p>Sequential (PHYLIPS):</p>
+<pre>
+     2   109
+ATISA1    GSPNLYQ-GGRKPWHSINFICAHDGFTLADLVTYNNKNNLANGEENNDG
+          ENHNYSWNCGEEGDFASISVKRLRKRQMRNFFVSLMVSQGVPMIYMGDE
+          YGHTKGGN---
+POTISA1   GSPNLYQKGGRKPWNSINFVCAHDGFTLADLVTYNNKHNLANGEDNKDG
+          ENHNNSWNCGEEGEFASIFVKKLRKRQMRNFFLCLMVSQGVPMIYMGDE
+          YGHTKGGN---</pre>
+<p>Interleaved (PHYLIPI):</p>
+<pre>
+     2   109
+ATISA1    GSPNLYQ-GGRKPWHSINFICAHDGFTLADLVTYNNKNNLANGEENND
+POTISA1   GSPNLYQKGGRKPWNSINFVCAHDGFTLADLVTYNNKHNLANGEDNKD</pre>
+<pre>
+          GENHNYSWNCGEEGDFASISVKRLRKRQMRNFFVSLMVSQGVPMIYMG
+          GENHNNSWNCGEEGEFASIFVKKLRKRQMRNFFLCLMVSQGVPMIYMG</pre>
+<pre>
+          DEYGHTKGGN---
+          DEYGHTKGGN---</pre>
+<p><strong>Warning</strong>: Species names may not contain characters `( ) : ; , [ ]'
+and exceed 10 characters.</p>
+</dd>
+<dt><strong><a name="stockholm" class="item"><strong>STOCKHOLM</strong></a></strong></dt>
+
+<dd>
+<pre>
+# STOCKHOLM 1.0</pre>
+<pre>
+MALK_ECOLI  MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTLLRMIA
+MALK_SALTY  MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTLLRMIA
+MALK_ENTAE  MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTLLRMIA
+MALK_PHOLU  MSSVTLRNVSKAYGETIISKNINLEIQEGEF-------------------</pre>
+<pre>
+MALK_ECOLI  RCHLFREDGTACRRLHKEPGV
+MALK_SALTY  RCHLFREDGSACRRLHQEPGV
+MALK_ENTAE  ---------------------
+MALK_PHOLU  ---------------------
+//</pre>
+</dd>
+</dl>
+
+</body>
+
+</html>

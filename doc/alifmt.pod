@@ -1,0 +1,183 @@
+
+=pod
+
+=begin man
+
+=head1 NAME
+
+=over 4
+
+=item B<alifmt> - Aligned sequences formats
+
+=back
+
+=head1 DESCRIPTION
+
+=end man
+
+This document illustrates some common formats used for aligned sequences
+representation.
+
+=over 4
+
+=item B<CLUSTAL>
+
+ CLUSTAL W (1.82) multiple sequence alignment
+
+
+ MALK_ECOLI      MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTL
+ MALK_SALTY      MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTL
+ MALK_ENTAE      MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTL
+ MALK_PHOLU      MSSVTLRNVSKAYGETIISKNINLEIQEGEF--------------
+                 *:** *:**:**:*:.::**:***:*::***
+
+ MALK_ECOLI      LRMIAGLETITSGDLACRRLHKEPGV
+ MALK_SALTY      LRMIAGLETITSGDLACRRLHQEPGV
+ MALK_ENTAE      LRMIAGLETVTSGDL-----------
+ MALK_PHOLU      LRM-----------------------
+                 ***
+
+B<Warning>: Names must not contain spaces or exceed 30 characters.
+
+=item B<FASTA>
+
+ >MALK_ECOLI
+ MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTLLRMIA
+ GLETITSGDLACRRLHKEPGV
+ >MALK_SALTY
+ MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTLLRMIA
+ GLETITSGDLACRRLHQEPGV
+ >MALK_ENTAE
+ MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTLLRMIA
+ GLETVTSGDL-----------
+ >MALK_PHOLU
+ MSSVTLRNVSKAYGETIISKNINLEIQEGEF--------------LRM--
+ ---------------------
+
+=item B<MEGA>
+
+ #mega
+ !Title Multiple Sequence Alignment;
+
+ #MALK_ECOLI
+ MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTLLRMIA
+ GLETITSGDLACRRLHKEPGV
+ #MALK_SALTY
+ MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTLLRMIA
+ GLETITSGDLACRRLHQEPGV
+ #MALK_ENTAE
+ MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTLLRMIA
+ GLETVTSGDL-----------
+ #MALK_PHOLU
+ MSSVTLRNVSKAYGETIISKNINLEIQEGEF-------------------
+ ---------------------
+
+=item B<MSF>
+
+ !!AA_MULTIPLE_ALIGNMENT 1.0
+ PileUp of: @pep.list
+
+  msf.seq       MSF: 55  Type: P  Nov 22, 2001 11:02  Check: 2529 ..
+
+  Name: m73237           Len:   655  Check: 7493  Weight:  1.00
+  Name: l28824           Len:   655  Check: 5456  Weight:  1.00
+  Name: u04379           Len:   655  Check: 9580  Weight:  1.00
+
+ //
+
+         1                                                   50
+ m73237  ~~~~~MADSA NHLPFFFGQI TREEAEDYLV QGGMSDGLYL LRQSRNYLGG
+ l28824  MASSGMADSA NHLPFFFGNI TREEAEDYLV QGGMSDGLYL LRQSRNYLGG
+ u04379  ~~~~~MPDPA AHLPFFYGSI SRAEAEEHLK LAGMADGLFL LRQCLRSLGG
+
+         51
+ m73237  ~~~~~
+ l28824  ~~~~~
+ u04379  AACG*
+
+B<Warning>: This format cannot handle more than 500 sequences in a
+single alignment.
+
+=item B<NEXUS>
+
+ #NEXUS
+
+ begin data;
+   dimensions ntax=2 nchar=89;
+   format datatype=Protein interleave gap=- missing='.';
+   matrix
+ [           1                                               50]
+ btdDm       -------AQQQQHHLHMQQAQHH-----------LHLSH------QQAQQ
+ TSp1        --------------------AEH-----------PSLR--------GTPL
+
+ [           51                          80]
+ btdDm       YACPICSKKFSRSDHLSKHKKTHF------
+ TSp1        FACPICNKRFMRSDHLAKHVKTHN------
+
+     ;
+ endblock;
+
+B<Warning>: Text enclosed in brackets is considered as comment, and
+thus ignored.
+
+=item B<PHYLIP>
+
+Sequential (PHYLIPS):
+
+      2   109
+ ATISA1    GSPNLYQ-GGRKPWHSINFICAHDGFTLADLVTYNNKNNLANGEENNDG
+           ENHNYSWNCGEEGDFASISVKRLRKRQMRNFFVSLMVSQGVPMIYMGDE
+           YGHTKGGN---
+ POTISA1   GSPNLYQKGGRKPWNSINFVCAHDGFTLADLVTYNNKHNLANGEDNKDG
+           ENHNNSWNCGEEGEFASIFVKKLRKRQMRNFFLCLMVSQGVPMIYMGDE
+           YGHTKGGN---
+
+Interleaved (PHYLIPI):
+
+      2   109
+ ATISA1    GSPNLYQ-GGRKPWHSINFICAHDGFTLADLVTYNNKNNLANGEENND
+ POTISA1   GSPNLYQKGGRKPWNSINFVCAHDGFTLADLVTYNNKHNLANGEDNKD
+
+           GENHNYSWNCGEEGDFASISVKRLRKRQMRNFFVSLMVSQGVPMIYMG
+           GENHNNSWNCGEEGEFASIFVKKLRKRQMRNFFLCLMVSQGVPMIYMG
+
+           DEYGHTKGGN---
+           DEYGHTKGGN---
+
+B<Warning>: Species names may not contain characters `( ) : ; , [ ]'
+and exceed 10 characters.
+
+=item B<STOCKHOLM>
+
+ # STOCKHOLM 1.0
+
+ MALK_ECOLI  MASVQLQNVTKAWGEVVVSKDINLDIHEGEFVVFVGPSGCGKSTLLRMIA
+ MALK_SALTY  MASVQLRNVTKAWGDVVVSKDINLDIHDGEFVVFVGPSGCGKSTLLRMIA
+ MALK_ENTAE  MASVQLRNVTKAWGDVVVSKDINLEIQDGEFVVFVGPSGCGKSTLLRMIA
+ MALK_PHOLU  MSSVTLRNVSKAYGETIISKNINLEIQEGEF-------------------
+
+ MALK_ECOLI  RCHLFREDGTACRRLHKEPGV
+ MALK_SALTY  RCHLFREDGSACRRLHQEPGV
+ MALK_ENTAE  ---------------------
+ MALK_PHOLU  ---------------------
+ //
+
+=back
+
+=begin man
+
+=head1 SEE ALSO
+
+=over 4
+
+=item B<squizz>(1), B<seqfmt>(5)
+
+=back
+
+=head1 AUTHOR
+
+Nicolas Joly (njoly@pasteur.fr), Institut Pasteur.
+
+=end man
+
+=cut

@@ -1,0 +1,14 @@
+SQUIZZ
+
+Squizz is a sequence/alignment format checker, but it has some
+conversion capabilities too.
+
+Most common sequence and alignment formats are supported :
+
+- EMBL, FASTA, GCG, GDE, GENBANK, IG, NBRF, PIR (codata), RAW, and
+  SWISSPROT.
+- CLUSTAL, FASTA, MEGA, MSF, NEXUS, PHYLIP (interleaved and sequential) and
+  STOCKHOLM.
+
+Any remark/suggestion/problem should be reported to the current
+maintainer: Nicolas Joly <njoly@pasteur.fr>.

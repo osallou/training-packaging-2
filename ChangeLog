@@ -1,0 +1,1338 @@
+2010-12-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Recognize `charstatelabels' as a valid
+	NEXUS command.
+
+	* lib/align/nexusil.l: Support tab characters just like plain
+	spaces in commands.
+
+	* lib/align/megal.l: Do correctly handle sequence names that start
+	with `mega' string.
+	* test/mega.sh: Exercize it.
+
+2010-09-15  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embl*.[ly]: Relax accession number definition, to a
+	single word.
+
+2010-09-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank*.[ly]: Relax accession number definition,
+	by allowing a single word (that do not exceed allowed characters
+	per line). Problem reported by Marc Logghe.
+	* test/genbank.sh: New file to exercize GENBANK format.
+
+2010-05-12  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/format.c: Do reset entry number when counting entries during
+	format verification.
+	* test/count.sh: New test file, to exercize entries count.
+
+2010-05-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c: Fix entries count which has been broken in
+	previous cleanup.
+
+2010-05-10  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/*.[ch]: Cleanup format handling, to not rely on implicit
+	structures copying between functions. No functional change.
+
+2010-01-18  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Allow square brackets in sequence names
+	enclosed with quotes.
+	* test/nexus.sh: Exercise it.
+
+2009-11-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Be more strict when checking for end tag in
+	ignored blocks, do only match complete word.
+	* test/nexus.sh: Exercise it.
+
+2009-10-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/*/*.y: Switch from deprecated YYPARSE_PARAM define, to
+	`%parse-param' option.
+
+2009-10-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/megay.y: Add support for long sequence names.
+	* test/mega.sh: Exercise it.
+
+	* lib/align/parse.c: Split `parse_seqadd()' function in 2 new ones
+	`parse_tmpupd()' which add the sequence name to a temporary buffer
+	and `parse_seqnew()' which really add the sequence.
+	* lib/align/*y.y: Adjust accordingly.
+
+2009-10-22  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/phylip[is].sh: Work around somw `grep -e' portability
+	problems.
+
+	* test/clustal.sh: Do not use `echo -n "msg"' which is not
+	portable, but `echo "msg" | tr -d "\n"' instead.
+
+2009-10-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbanky.y: REFSEQ databank may have both DBLINK
+	and DBSOURCE keyword lines.
+
+2009-09-17  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c, lib/sequence.c: Do not redefine off_t, config.h
+	already handles it.
+
+2009-09-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Update for new accessions found in
+	Refseq release 36.
+
+2009-09-04  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Do handle keywords that have an internal
+	`;' character.
+	* test/embl.sh: Exercise it.
+
+	* lib/sequence/sprotl.l: Do handle cross-reference data which
+	contain an internal `;' character.
+	* test/sprot.sh: New file to exercise SWISSPROT format.
+
+	* lib/sequence/genbankl.l: Work around a small header glitch
+	(extra leading space) in GenBank 173.0 release files.
+
+2009-09-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/stockl.l: Sequence name may have a single character.
+	* test/stockholm.sh: Exercise it.
+
+	* lib/align/msfl.l: Increase allowed sequence names up to 80
+	characters.
+
+	* lib/align/megal.l: Do not choke on long Title lines.
+
+2009-06-17  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/megal.l: Do ignore more comments.
+	* test/mega.sh: Exercise it.
+
+2009-05-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Do handle/ignore base numbers which can
+	appear before the sequence chunk.
+
+2009-04-23  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/phylipi.sh: Add check for file with extra newlines at EOF.
+
+2009-04-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Allow more than one command on a single
+	line.
+
+2009-03-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank*.[ly]: Add support for upcoming `DBLINK'
+	keyword in RefSeq.
+
+2009-03-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/megal.l: Improve comment handling, by removing a
+	maximum size limit.
+
+2009-03-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/megal.l: Ignore, for now, comment (enclosed with
+	quotes) after sequence name.
+	* test/mega.sh: Exercise it.
+
+2009-02-18  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c: Fix duplicate sequence names detection (the array
+	holding them was incorrectly sorted).
+	* test/align.sh: Exercise it.
+
+	* lib/align/megal.l: Increase allowed sequence name length from 40
+	to 50 characters.
+
+2009-01-20  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/igl.l: Fix detection without newline at EOF.
+	* test/ig.sh: Exercise it.
+
+	* test/ig.sh: New file to exercise IG sequence format.
+
+2009-01-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylipil.l: Correctly detect format without newline at
+	EOF, when sequences are on a single line.
+
+	* test/phylip[is].sh: Add checks for single line sequence, which
+	both PHYLIPI/PHYLIPS formats should match.
+
+2008-12-12  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l, lib/align/nexusi.c: Add support for
+	sequence that contains spaces (must be enclosed with quotes).
+	* test/nexus.sh: Exercise it.
+
+2008-10-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Do not choke on some UniProt secondary
+	accessions numbers (allow a mix of 6 alpha-numeric characters).
+
+2008-10-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/msf.sh: New file to exercise MSF alignment format.
+
+	* lib/align/megal.l: Ignore header line trailing spaces.
+
+2008-09-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c, doc/alifmt.pod: Small typo fix.
+	* doc/alifmt.{man,html}: Regen.
+
+2008-09-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Allow spaces before `begin' block keyword.
+
+	* lib/align/nexusil.l: Add `charlabels' command parsing.
+
+	* lib/align/stocky.y: Be robust against invalid sequence lines
+	(endless loop without space separator).
+	* test/stockholm.sh: New file, to exercise STOCKHOLM format.
+
+2008-09-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/megal.l: Support identical `.' character in sequences.
+	* lib/align/mega.c: Replace all "identical" characters in
+	sequences.
+	* test/mega.sh: Exercise it.
+
+2008-09-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/parse.c: Do not abort for unexpected sequence name in
+	alignment anymore.
+	* test/align.sh: Exercise it.
+
+2008-09-10  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylip[is]*.[ly]: Handle correctly files without
+	newline at EOF (last sequence line).
+	* test/phylip[is].sh: Exercise them.
+
+2008-09-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/megal.l: Handle correctly files without newline at
+	EOF (last sequence line).
+	* test/mega.sh: Exercise it.
+
+2008-09-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/rawl.l: Allow gaps in RAW format (at least, to be
+	consistent with other sequence formats).
+	* test/raw.sh: Exercise it.
+
+2008-09-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/align.sh: New file for aligments generic checks.
+
+	* lib/sequence/utils.c: New file that holds sequence generic
+	utilities, such as a sequence name cleaner.
+	* lib/align/{mega,msf,nexusi}.c: Use it.
+
+	* lib/sequence/raw.c: Do not output gaps, just skip them for now.
+	* test/raw.sh: New file to exercise RAW format.
+
+	* test/align/fasta.seq: Updated.
+
+	* lib/sequence/embll.l: Fix EMBL parsing for anonymous entry.
+	* test/embl.sh: New file, to exercise it.
+
+2008-09-01  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/phylip[is].sh: Exercise sequence names with spaces.
+
+	* lib/align/phylip.[ch]: Simplify sequence names cleanup.
+	* lib/aligm/phylip[is].c: Adjust.
+
+2008-08-29  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/stockl.l: Support tab characters just like spaces.
+
+	* lib/align/mega*.[ly]: Add support for old statement format.
+	* test/mega.sh: New file to exercise MEGA format.
+
+	* lib/align/clustall.l: Ignore empty lines without newline at EOF.
+	* test/clustal.sh: Exercise it.
+
+2008-08-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/extern/text.c: Do not add more than a single space separator
+	when appending text buffers.
+
+	* lib/sequence/sprotl.l: Add support for new DE lines structure.
+
+	* lib/sequence/sprotl.l: Allow new `AGRICOLA' key in RX lines..
+
+2008-07-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Add `*' as valid base character.
+
+	* lib/align/phylip[is]l.l: Do not allow empty line between header
+	and first sequence chunk.
+
+	* test/phylip[is].sh: New files, to exercise PHYLIPI/PHYLIPS
+	formats.
+
+2008-07-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/stocky.y: Do not require empty line between header and
+	sequences.
+
+	* lib/align/nexusil.l: Ignore trailing spaces after MATRIX
+	keyword.
+
+2008-05-21  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Adjust parsing to support missing newline
+	at EOF on sequence line.
+	* test/clustal.sh: Exercise it.
+
+2008-04-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* all: Remove unused DnaStrider sequence format.
+
+2008-04-18  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/alifmt.pod: Add MEGA alignment sample.
+	* doc/alifmt.{man,html}: Regen.
+
+2008-04-15  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Ignore trailing spaces after semi-column,
+	for matrix block end.
+
+2008-04-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Now that spaces in token assignment are
+	globally supported, remove program specific hacks (ClustalW and
+	MacClade).
+
+	* lib/align/mega*: First try to support MEGA alignment format.
+	* lib/align.[ch], src/format.c: Adjust.
+
+	* test/align/mega.seq: New file in MEGA format.
+	* test/*ali.sh: Exercise it.
+
+2008-03-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Add `AGRICOLA' as a suppoprted resource
+	identifier for RX lines.
+
+2008-03-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Skip trailing spaces in accessions list
+	fields.
+
+2008-03-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/stockl.l: Do not fail if last line, with end tag `//',
+	has no newline character.
+
+	* lib/align/nexusil.l: Handle command tokens which have spaces
+	around equal character (e.g `gap = -' instead of `gap=-').
+
+	* test/nexus.sh: New file, NEXUS format specific checks.
+
+2008-03-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/fastal.l: Do not understand `.' as valid gap
+	character anymore, as most programs does not support it.
+
+2008-02-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/nbrfl.l: Handle `D1' sequence type, for unknown
+	DNA, produced by EMBOSS programs.
+
+	* test/convali.sh: Remove `-s' flag in tests, now that its
+	behaviour has been changed to be the default.
+
+2008-02-15  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/fasta.c: Do not output `?' as a valid gap
+	character.
+
+2008-02-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Make empty line mandatory again between
+	header and first chunk of sequences.
+	* test/clustal.sh: Exercise it.
+
+2008-02-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/*.html: Small update to add correct title.
+
+2008-02-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c: Speedup strict alignment check by removing nested
+	loops in duplicate names check.
+
+	* lib/align/fasta2.c: Fix invalid sequence buffer reallocation
+	size.
+
+	* src/squizz.c: Small update to make format verification (-f) work
+	with formats restrictions (-A/-S).
+	* doc/squizz.pod: Update documentation accordingly.
+
+2008-02-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Do not fail if last consensus chunk does
+	not end with a newline (at EOF).
+
+	* test/clustal.sh: New file, for CLUSTAL format specific tests.
+
+2008-02-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/*.pod: Do not output man(1) header/footer when generating
+	HTML documents. While here, remove generated index too.
+
+2008-01-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprotl.l: Increase DR identifier value size to
+	match current UniProtKB limits.
+
+2008-01-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustal*.[ly]: Improve format detection by adding a
+	terminator tag check.
+
+2007-10-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/format.c: Do not merge anymore PHYLIPI/PHYLIPS under generic
+	PHYLIP name (PHYLIP is still an alias for PHYLIPI).
+	* test/*ali.sh: Update tests accordingly.
+
+	* src/format.[ch]: Allow format display list to restricted to
+	sequence or alignment lists.
+	* src/squizz.c: Adjust accordingly.
+
+2007-10-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embly.y: Add support for new ANN data class, which
+	has both CO and SQ sections.
+
+2007-09-04  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c: Add a new flag `-n' to count and report detected
+	entries for a single type.
+	* src/format.[ch]: Count entries under strict format
+	detection/verification.
+	* doc/squizz.pod: Document it.
+	* test/squizz.sh: Check `-n' options conflicts.
+
+2007-09-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank*.[ly]: Add support for new `PRIMARY'
+	keyword in RefSeq databank.
+
+2007-07-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprot*.[ly]: Add basic support for `Protein
+	Existence' (PE) lines.
+
+2007-06-20  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c: Restrict intput to regular files.
+	* test/squizz.sh: Exercise it.
+
+	* lib/sequence/ig.c: Fix an infinite loop, when comments has an
+	unsplittable word of more than 78 characters.
+
+2007-06-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embl*.[ly]: Add support for project (PR) lines.
+
+2007-06-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Allow lines with trailing spaces.
+
+2007-06-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/stockl.l: Fix parsing, when comment line appears in
+	sequences block.
+
+	* lib/align/stock*.[ly]: Parsers cleanup, to make it more robust
+	to format variations.
+
+	* lib/align/msfl.l: Do not bail on expected empty lines that do
+	have some extra spaces.
+
+2007-06-01  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/alifmt.pod: Add MSF sequence number limitation.
+
+2007-04-04  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Do not validate NEXUS format for files
+	ending with invalid begin/end blocks other than characters or
+	data.
+
+2007-03-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/gdel.l: Ignore all spaces characters in sequence
+	data.
+
+2007-02-15  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/gdel.l: Ignore trailing spaces after sequence
+	names.
+
+2007-02-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Allow structure and penality masks lines
+	in sequence chunks.
+
+2007-02-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/parse.[ch]: Use return values for all parsing
+	functions, transmit errors to interrupt parsers.
+	* lib/align/*y.y: Adjust.
+
+	* src/squizz.c: Check for incompatible `-c' and `-s' options.
+	* test/squizz.sh: Exercise it.
+
+2007-02-12  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c: Change `-s' default behaviour. Strict checks are
+	now enabled by default, and can be disabled with this option.
+	* doc/squizz.pod: Update accordingly.
+
+2007-01-12  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusi*.[ly]: Sequence block separator can now be made
+	of multiple empty lines (even with comments in between).
+
+2007-01-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Skip EMBL internal fields, used in
+	sequence submisstion (e.g. `{ST,AC,BQ} * ').
+
+2007-01-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/pirl.l: Do not break on large sequence lines, when
+	trying to detect empty lines (made by sreformat tool).
+
+2006-12-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustal*.[ly]: Handle CLUSTAL files whitout empty line
+	between the header line and the first sequences block.
+
+2006-12-04  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylipil.l: Ignore trailing spaces in header line.
+	* lib/align/phylipsl.l: Likewise.
+
+2006-11-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence.c: Adjust sequence type detection to handle new `J'
+	(Leucine or IsoLeucine) and `O' (Pyrrolysine) amino acid codes.
+
+2006-11-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Allow consensus lines without leading
+	spaces.
+
+2006-11-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Ignore spaces characters in block end line.
+
+	* lib/align/phylipil.l: Ignore tabs, like spaces, in empty lines.
+
+2006-10-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprot*.[ly]: Add support for OH (Organism Host)
+	lines.
+
+2006-10-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Update genbank accession numbers for
+	WGS entries.
+
+2006-10-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence.c: Add some debug messages in strict checking mode,
+	enabled by setting environment variable SQUIZZ_DEBUG.
+
+2006-10-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusiy.y: Allow extra empty line before matrix block
+	end.
+
+2006-10-23  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Allow `~' as gap character.
+
+2006-10-21  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/squizz.sh: Check for formats list.
+
+2006-10-20  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/Makefile.am: Use `$(htmldir)' variable for HTML files
+	installation.
+
+	* lib/align/phylipsl.l: Do not allow empty line in sequence chunk.
+
+2006-10-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Ignore TITLE fields from unknown
+	source, and empty lines before sequence.
+
+	* lib/sequence/embll.l: Allow `-' gap characters.
+
+2006-10-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbanky.y: Make revision value `.<num>' optional
+	in VERSION field.
+
+	* lib/sequence/genbankl.l: Allow more than one space as separator
+	in VERSION field.
+
+2006-10-12  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Ignore extra (empty) lines before MATRIX
+	block end.
+
+2006-10-10  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Add `?' character as valid gap symbol.
+
+2006-10-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylipil.l: Redo `Do not ignore extra numbers in
+	sequence' (from 2004-12-17), that crept in again ...
+
+2006-10-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbanky.y: Allow single definition line without
+	ending character.
+
+	* lib/align/phylipsl.l: Ignore empty lines before each sequence
+	chunks.
+
+	* lib/align/clustall.l: Ignore empty/blank lines before the
+	CLUSTAL header tag.
+
+2006-10-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/pirl.l: Add `-' as valid gap character.
+
+	* lib/align/nexusil.l: Ignore invalid `symbols = "..."' in NEXUS
+	MacClade generated files (should be <token>=<value>, without extra
+	spaces).
+
+2006-10-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Revert previous, as it breaks detection
+	for files with last sequence newline but without consensus.
+
+	* lib/align/clustall.l: While here, simplify sequence blocks
+	separator by allowing more than a single newline.
+
+2006-09-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Fix detection with missing newline (at
+	EOF) in last sequence line.
+
+	* lib/align/nexusil.l: Only parse sequence blocks (characters,
+	data), and ignore all other types (codons, paup, taxa, tree, ...).
+
+2006-09-29  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprotl.l: Ignore more trailing spaces.
+
+	* lib/sequence/parse.c: Split `parse_dscadd()' into 2 functions.
+	One that prepend a separator space character if needed (for line
+	continuation), and one that do not (when text comes from the same
+	line).
+	* lib/sequence/*y.y: Adjust accordingly.
+
+2006-09-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Allow another tag version, with first
+	character uppercase (eg. Clustal).
+
+	* lib/sequence/genbank.c: Fix infinite loop with unsplittable long
+	words (without `-' character) in DEFINITION field output.
+	* lib/sequence/embl.c: Likewise.
+
+2006-09-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Allow lowercase version of `CLUSTAL' tag
+	in header.
+
+2006-09-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbanky.y: Update RefSeq format detection to use
+	`DBSOURCE' (protein) or `PROJECT' (genomic) lines, but not both.
+
+	* lib/sequence/genbankl.l: Ignore extra `REGION:' datas in
+	`ACCESSION' line.
+
+2006-09-21  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/Makefile.am: Remove leading space in format samples for HTML
+	generated files.
+
+	* lib/sequence/striderl.l: Allow `.' as valid gap character.
+
+2006-09-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylip.c: Add missing "error.h" include.
+
+2006-09-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/*/*l.l: Add `nounput' option to fix some lint warnings about
+	unused `unput()' function.
+
+2006-09-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Ignore trailing spaces following a comment
+	block.
+
+2006-09-04  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylip.[ch]: New file for PHYLIP common functions,
+	shared by both interleaved and sequential formats.
+
+	* lib/align/phylip[is].c: Use common code to fix sequence names
+	with invalid characters.
+
+2006-09-01  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustal.c: Check that at least one sequence name is
+	larger than 15 characters (do not always check all names).
+
+	* src/format.c: Turn warnings into errors for conversion problems.
+
+2006-08-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/sequence/*.seq: Update all available databanks entries from
+	GenBank, GenPept, RefSeq and UniProtKB.
+
+	* lib/sequence/genbank.c: Use localtime_r() instead of
+	localtime() like other formats.
+
+2006-08-29  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Allow `*' character (stop codon) in protein
+	alignments.
+
+2006-08-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msfl.l: Allow '?' as a valid gap character.
+	* lib/align/msf.c: Adjust.
+
+2006-08-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Ignore trailing tabs too, just like
+	spaces.
+
+2006-06-22  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embl*.[ly]: Add support for contig entries.
+
+	* lib/sequence/embl.c: Update ID line output to the new EMBL
+	format (rel. 87 - june 2006).
+	* test/sequence/embl.seq: Refresh sample entry from databank.
+
+	* lib/align/nexusil.l: Ignore invalid `gap= -' construct in NEXUS
+	format made by ClustalW program (spaces are illegal as gap
+	characters).
+
+2006-06-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Do not allow `;' character in sequence
+	names anymore, to preprare ID line format change in EMBL.
+
+	* lib/sequence/genbankl.l: Update header detection for GenPept
+	daily update files.
+
+2006-06-15  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c: Add some debug messages in strict checking mode,
+	enabled by setting environment variable SQUIZZ_DEBUG.
+
+2006-06-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Support `?' as valid gap character.
+	* lib/align/clustal.c: Adjust accordingly.
+
+2006-06-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/pirl.l: Small updates to support files generated by
+	Sean Eddy sreformat tool (mostly spacing fixes ...).
+
+2006-05-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Fix empty lines detection (to be ignored).
+
+2006-05-17  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embl*.[ly]: Simplify ID lines parsing.
+
+2006-05-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c: Do no abort on alignment allocation problem, return
+	NULL; like sequence already do.
+
+	* align.[ch]: Do alignment initialisation during allocation, and
+	remove specific function.
+	* sequence.[ch]: Likewise.
+
+2006-05-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/parse.c: Fix a small memory leak, when parsing
+	sequence names which already exists.
+
+	* lib/align.c: Fix two others in alignment object cleanup.
+
+2006-05-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/stock*.*: New files for STOCKHOLM alignment format
+	(from Sean Eddy HMMER package).
+	* lib/align.[ch], src/format.c: Adjust accordingly.
+
+	* test/align/stock.seq: New STOCKHOLM sample file.
+	* test/fmtali.sh, test/convali.sh: Exercise it.
+
+	* doc/squizz.pod, doc/alifmt.pod: Update documentation.
+
+2006-04-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msfl.l: Do not assume that `Name:' is followed by at
+	least a space character.
+
+2006-04-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msfy.y: Make empty line optional for first sequence
+	block (remains mandatory for others).
+
+2006-04-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/squizz.sh: Exercise recently added options.
+
+2006-04-18  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c: Add `-A' and `-S' options to restrict detection to
+	alignments or sequence formats.
+	* src/format.[ch]: Adjust accordingly.
+	* doc/squizz.pod: Document them.
+
+2006-04-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Ignore lines with spaces only during
+	sequences block parsing.
+
+2006-04-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Added `protein id' format to supported
+	accession list (found on NCBI protein entries).
+
+2006-04-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/format.c: Allow strict checks with format verification too,
+	not only for detection.
+
+	* doc/squizz.pod: Document `strict checks' operations.
+
+2006-03-31  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/alifmt.pod: Small formatting adjustements to not exceed 80
+	characters line limit.
+	* doc/seqfmt.pod: Likewise.
+
+2006-03-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/parse.c: Fix a stupid buffer mistake, which arise when
+	trying to add a new sequence name without leading spaces.
+
+	* lib/align/msf*.[ly]: Make the position numbers (before each
+	sequence block) optional.
+
+	* src/format.c: Simplify format detection code, no functional
+	change.
+
+2006-03-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msf.c: Small updates in MSF format output to match
+	reality: add an extra space after the sequence, remove leading `0'
+	characters to the checksum, and fix names alignment in header.
+
+	* lib/align/msf.c: Right justify names in sequence lines.
+
+2006-03-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* test/squizz.sh: New test file, to check for base operations
+	(options, ...).
+
+2006-03-10  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Do not allow new command if previous one is
+	unfinished. Strengthen command line continuation.
+
+2006-03-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Allow longer description text in CLUSTAL
+	header line.
+
+2006-03-08  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Adjust GenPept VERSION field, which use
+	the entry name where other databanks use accession number.
+
+	* lib/sequence/genbank*.[ly]: Add support for new `PROJECT'
+	field in REFSEQ databank; and make `DBSOURCE' field optional.
+
+2006-03-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c, lib/sequence.c: Add `#include <sys/types.h>' for
+	off_t definition on Darwin.
+	* src/format.c: Likewise.
+
+	* lib/sequence/sprot*.[ly]: Add support for old RX lines format.
+
+2006-02-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/squizz.c: Add `-f' option, to check for only one format
+	instead of trying to detect it.
+
+2006-01-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Fix sequence detection for entries with
+	more than 10Mb.
+
+	* lib/sequence/embl*.[ly]: Add support for `Third Party
+	Annotation' AH and AS lines.
+
+2006-01-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Update Accession Number definitions.
+
+	* lib/sequence/genbank[yl].*: Add minimal support for CONTIG
+	entries.
+	* lib/sequence.[ch]: Add some strict sequence checking code.
+	* src/format.c: Use it to reject entries without sequence.
+
+2006-01-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/*y.y: Remove unneeded check for empty sequence
+	string.
+
+2005-10-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c: Sequence names, in strict alignment checks, must
+	now be unique.
+	* test/align/fasta.seq: Adjust.
+
+2005-10-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embly.y: CC lines can be empty.
+
+2005-07-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/nbrfl.l: Allow `?' as a valid gap character.
+
+	* lib/align/msfl.l: Increase sequence names up to 55 characters.
+
+2005-07-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: OC nodes can be split across lines.
+	* lib/sequence/embly.y: Adjust.
+
+	* lib/sequence/embly.y: Organism classification list can be empty.
+
+2005-07-01  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/nbrfl.l: Allow `~' as a valid gap character.
+
+2005-06-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Allow token values enclosed with quotes,
+	because it contains spaces.
+	* lib/align/nexusiy.y: Adjust.
+
+2005-06-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Consensus lines may begin with tabs.
+
+2005-06-20  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusil.l: Allow multi-line comment.
+
+2005-06-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align.c: Remove all occurences of `strlen(x->str)', and use
+	already precalculated `x->strlen' instead.
+	* lib/align/msf.c: Likewise.
+
+2005-06-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprot.c: Fix output for sequence names with more
+	than 10 characters.
+
+	* lib/sequence/sprotl.l: Fix Swissprot OC nodes detection to allow
+	non-terminal `.' character.
+
+2005-05-29  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sproty.y: Make all organism fields optional.
+
+	* lib/sequence/sproty.y: Allow quaternary identifier for database
+	cross-references.
+
+2005-05-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/rawy.y: Fix incorrect format detection (multiple
+	raw sequences in the same file).
+
+2005-05-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Fix sequence without consenus line in last
+	chunk.
+
+2005-05-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Do not allow empty consensus line.
+
+2005-05-23  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Allow accession number ranges.
+	* lib/sequence/genbanky.y: Adjust.
+
+2005-05-21  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/nbrfl.l: Allow sequence names with semi-column.
+
+	* test/fmtali.sh: Add strict alignment format checks.
+
+2005-05-14  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: Allow accession number ranges.
+	* lib/sequence/embly.y: Adjust.
+
+	* lib/sequence/genbank.c: Fix unnamed sequences output.
+
+2005-05-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msf.c: Fix sequence loop calculation.
+
+	* lib/align/phylipil.l: strict checking fix for 1 line sequences.
+
+2005-03-17  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylipsl.l: Do not allow newlines in sequence names.
+
+	* lib/sequence/genbanky.y: Make ORGANISM field optional.
+
+	* lib/sequence/igl.l: Allow more gap characters.
+
+2005-03-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank.c: Fix definition field loop.
+
+	* lib/sequence/fastal.l: Description separator can have more than
+	one `space' character.
+
+2005-03-01  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Restore optional consensus line which was
+	lost in some previous revision.
+
+2005-02-22  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msfl.l: Allow leading spaces before names paragraph
+	terminator.
+
+2005-02-21  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Allow multiple chunks of bases seprated by
+	spaces.
+
+2005-02-11  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Allow `.' as a valid gap character.
+
+2005-02-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank.c: Add `Keywords' display.
+
+2005-02-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank*: Fix `Keywords' parsing and storage.
+
+2005-01-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embl.c: Fix Keywords output, for values longer than
+	one line.
+
+2005-01-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprotl.l: Allow larger (5+1+5) SwissProt entry
+	names.
+
+2005-01-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embl*: Parse correctly KW fields longer than 75
+	characters.
+	* lib/sequence.[ch], lib/sequence/parse.c, lib/extern/text.c:
+	Adjust accordingly.
+
+	* lib/sequence/embll.l: Allow spaces in in RX identifiers.
+
+2005-01-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: RX identifiers may contain `;' characters.
+
+	* lib/align.[ch]: Rename `ALIFMT_NEXUS' to `ALIFMT_NEXUSI' for
+	further Sequential NEXUS format support.
+	* src/format.c: Adjust.
+
+	* lib/Makefile.am: Rename all nexus files to nexusi equivalent.
+	* lib/align.c, lib/align/nexus*: Adjust function names
+	accordingly.
+
+2005-01-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/igl.l: Skip empty lines.
+
+2005-01-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustall.l: Do not allow sequence spaces anymore.
+
+2005-01-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Make consensus line optional.
+	* lib/align/clustall.l: Adjust.
+
+	* lib/align/nexusl.l: Ignore extra spaces in commands before `;'.
+
+2005-01-18  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/nbrfl.l: Allow lowercase characters in tags.
+
+	* lib/align/nexusl.l: Allow tabs characters, not only spaces.
+
+2005-01-04  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/phylipil.l: Add `~' as a valid gap character.
+
+2004-12-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/igy.y: Make sequence type optional.
+	* lib/sequence/igl.l: Spaces in sequence name are not allowed.
+
+2004-12-17  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustaly.y: Allow empty consensus lines.
+	* lib/align/clustall.l: Update.
+
+	* lib/align/phylipil.l: Do not ignore extra numbers in sequence.
+	* lib/align/phylipsl.l: Likewise.
+
+2004-12-13  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusl.l: Ignore sequence trailing spaces.
+
+2004-12-10  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusl.l: Allow unaligned sequence names.
+	* lib/align/nexusy.y: Allow sequence chunks separated by spaces.
+
+	* lib/align/parse.c: Remove leading spaces in sequence names.
+
+2004-12-07  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/nbrf.c: Always end NBRF sequence with '*'.
+
+	* doc/alifmt.pod: Document comments in NEXUS format; and remove
+	some from example.
+
+	* lib/sequence/fastal.l: Add `.' to allowed gap characters.
+
+2004-12-06  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/format.c, src/format.h: format_check() -> format_detect().
+	* src/squizz.c: Update.
+
+	* lib/align.c, lib/align.h: New `align_strict' function, to check
+	that sequences look like an alignments.
+	* src/format.c: Use it.
+
+	* lib/align/clustall.l: Bump sequence name to 50 characters.
+
+2004-12-03  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/igy.y: The sequence type is now optional.
+
+	* doc/alifmt.pod: Add aligned FASTA sequence example.
+
+	* doc/Makefile.am: New directives to generate HTML pages from POD
+	format documentation files.
+	* configure.ac: Check for pod2html program.
+	* doc/alifmt.html, doc/seqfmt.html: New files.
+
+2004-12-02  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/fastal.l: Allow `~' as gap character.
+
+	* lib/align/clustall.l: Allow spaces between sequence chunks.
+
+2004-11-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusl.l: Remove forgotten function declaration.
+
+	* lib/sequence/fastal.l: Skip tab characters, like spaces.
+
+2004-11-29  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/msfl.l: Increase sequence name buffer to 50
+	characters.
+
+2004-11-24  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusl.l: Allow more than 1 space as word separator in
+	command lines. Allow extra space/newline characters before `;' in
+	matrix field.
+
+2004-11-22  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexusl.l: Allow some leading `\t' characters.
+
+2004-11-18  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence.c: Fix memory leaks introduced with multiple
+	`Accessions' and `Keywords' support.
+
+2004-11-16  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/nexus*: Full NEXUS alignment format rewrite.
+
+2004-10-01  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprotl.l: Allow non terminal `.' at the end of DE
+	line in SwissProt format.
+
+	* lib/extern/text.c: Corrected space insertion for ` - '
+	constructs.
+
+2004-09-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/embll.l: EMBL format can now handle up to 13
+	characters entry names.
+
+2004-09-29  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank*: Add parsing/output of NCBI gi number in
+	`Version' field.
+
+2004-09-28  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/protein.c: Use 110.0 for `X' amino acid weight.
+
+	* lib/sequence/sprot.c: Full `Definition' field output rewrite.
+
+	* lib/extern/text.c: `text_add'->`text_strupd' for consistencies.
+	* lib/*/*: Adjust.
+
+2004-09-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbankl.l: Update `Keywords' definition and
+	parsing. Workaround for empty lines in `Comments'.
+
+	* lib/sequence/sprot.c: Do not split Enzyme references
+	`(EC x.x.x.x)' between lines.
+
+	* lib/sequence/embly.y: Add `RG' (Reference Group) field support
+	in EMBL format.
+	* lib/sequence/embl.l: Adjust.
+
+2004-09-26  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank.c: Add `Keywords' output.
+
+	* lib/sequence/embly.y: Add `Version' field support.
+	* lib/sequence/genbanky.y: Likewise.
+
+	* lib/sequence/genbank.c: 'Definition' field output fix.
+	* lib/sequence/embl.c: 'Keywords' field output fix.
+
+2004-09-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprot.c: Misc SWISSPROT entry output fixes.
+
+	* lib/sequence.c: Add support for `Keywords' field. Use it with
+	SWISSPROT and EMBL formats.
+	* lib/sequence.c: Support secondary accessions number for all
+	formats.
+
+2004-09-12  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/*y.y: Replace `YYACCEPT' with `return 0', and
+	remove some unused ones.
+	* lib/*/*y.y: Fix lint warning for yyerror() unused argument.
+
+2004-08-31  Nicolas Joly  <njoly@pasteur.fr>
+
+	* doc/seqfmt.pod: SPROT -> SWISSPROT.
+	* doc/squizz.pod: Update documentation for `-c' flag.
+
+2004-07-19  Nicolas Joly  <njoly@pasteur.fr>
+
+	* src/format.c: Refuse to work on alignments (strict mode) with
+	anonymous sequences.
+
+2004-06-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprotl.l: Support `RG' tag in SwissProt format.
+	* lib/sequence/sproty.y: Adjust.
+
+2004-06-09  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/genbank*.[ly]: genbank parser update for GenPept
+	141.0 release.
+
+2004-06-05  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/sprot.c: Include `inttypes.h' for uint64_t
+	definition on Tru64.
+
+2004-05-27  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/*/*.y: Replace %pure_parser with %pure-parser.
+
+	* lib/sequence/*.y: Add some missing prototypes.
+	* lib/align/*.y: Likewise.
+
+2004-05-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/align/clustal.c: Add some missing `const' keywords.
+
+	* configure.ac: Replace `unsigned long long' with `uint64_t'.
+	* lib/sequence/sprot.c: Use it.
+
+2004-05-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/*.l: Add `never-interactive' option. Remove local
+	yywrap definition, use corresponding noyywrap option instead.
+	* lib/align/*.l: Likewise.
+
+2004-05-25  Nicolas Joly  <njoly@pasteur.fr>
+
+	* lib/sequence/parse.c: Add missing "error.h" include.
+
+2004-04-30  Nicolas Joly  <njoly@pasteur.fr>
+
+	* First beta version (v0.99).
+

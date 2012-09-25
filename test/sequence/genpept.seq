@@ -1,0 +1,29 @@
+LOCUS       Z31371_2      A7120FTSZ           301 aa PEP linear BCT 18-APR-2005
+DEFINITION  Anabaena 7120 ftsZ and gsh-III genes.
+DATE        18-APR-2005
+ACCESSION   Z31371
+VERSION     Z31371_2.1  GI:1100795
+KEYWORDS    FtsZ protein.
+SOURCE      Nostoc sp. PCC 7120 (Anabaena sp. PCC 7120)
+ORGANISM    Nostoc sp. PCC 7120
+            Bacteria; Cyanobacteria; Nostocales; Nostocaceae; Nostoc.
+COMMENT     CDS complement(1948..2853)
+            /gene="gsh-II"
+            /transl_table=11
+            /product="glutathione synthetase"
+            /protein_id="CAA83242.1"
+            /db_xref="GI:1100795"
+            /db_xref="GOA:P45480"
+            /db_xref="UniProtKB/Swiss-Prot:P45480"
+            /NucGI="1100793"
+WEIGHT      33360.77
+PI          5.06
+LENGTH      301
+ORIGIN      Translated using phase 1
+        1 MEAAQILGHE VWVTQANWLS VVDSKAWAIL QQVELVPVQL IDGRWVAASP WYTLNTRSFS
+       61 SLETMDAVFM RTDPPVNDAY LYATYVLDYV DQRKTLVINN PNGIRGANEK MYALQFTKAI
+      121 PETIVSADKD FIRQFVEAKG ATVLKPLGNK AGEGILFLQA GDRNFNSIVE LSTQQGRLPV
+      181 MVQTYLPEAK EGDKRIILLN GEPIGALNRL ASGSDFRNNV ATGGTVAKTE ITPREEEICS
+      241 QIAANLRQDG LIFVGIDVIG GYLTEVNVTS PTGIREIDRL DGTRLAHQVI QWVEKNLQIQ
+      301 N     
+//

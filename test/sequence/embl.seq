@@ -1,0 +1,56 @@
+ID   X97897; SV 1; linear; mRNA; EST; MUS; 140 BP.
+XX
+AC   X97897;
+XX
+DT   23-MAY-1996 (Rel. 47, Created)
+DT   06-FEB-1997 (Rel. 50, Last updated, Version 2)
+XX
+DE   M.musculus mRNA for protein homologous to vasodilator-stimulated
+DE   phosphoprotein
+XX
+KW   EST; vasodilator-stimulated phosphoprotein.
+XX
+OS   Mus musculus (house mouse)
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi; Muroidea;
+OC   Muridae; Murinae; Mus.
+XX
+RN   [1]
+RX   DOI; 10.1023/A:1018465402294.
+RX   PUBMED; 9032982.
+RA   Holzschu D., Lapierre L., Neubaum D., Mark W.H.;
+RT   "A molecular strategy designed for the rapid screening of gene traps based
+RT   on sequence identity and gene expression patterns in mice";
+RL   Transgenic Res. 6(1):97-106(1997).
+XX
+RN   [2]
+RP   1-140
+RA   Mark W.H.;
+RT   ;
+RL   Submitted (15-MAY-1996) to the EMBL/GenBank/DDBJ databases.
+RL   W.H. Mark, Cornell University, Dept. Genetics and Development, 445 Biotech.
+RL   Bldg., Ithaca, NY 14853, USA
+XX
+DR   UNILIB; 604; 441.
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   source          1..140
+FT                   /organism="Mus musculus"
+FT                   /strain="C57B1/6"
+FT                   /mol_type="mRNA"
+FT                   /dev_stage="embryonic"
+FT                   /cell_line="Bruce 4"
+FT                   /cell_type="ES cell"
+FT                   /db_xref="taxon:10090"
+FT                   /db_xref="UNILIB:604"
+FT   mRNA            <1..>140
+FT                   /product="homologous to vasodilator-stimulated
+FT                   phosphoprotein"
+FT                   /note="EST"
+XX
+SQ   Sequence 140 BP; 25 A; 58 C; 39 G; 17 T; 1 other;
+     ttctcccaga agctgactct atggngaccc cgagagagac tgagcagaac ctggagccag        60
+     ccccgcaccc ctgcacttcc aatcaggggc gccccgggag cactccccgt ggcgcgccgc       120
+     ccgccctccg cgcagccatg                                                   140
+//
