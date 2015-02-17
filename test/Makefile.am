@@ -1,10 +1,10 @@
 
-TESTS = squizz.sh fmtseq.sh fmtali.sh convseq.sh convali.sh \
+TESTS = squizz.sh fmtali.sh convali.sh \
 	$(TESTS_SEQS) align.sh $(TESTS_ALIS) count.sh
 
 TESTS_ALIS = clustal.sh mega.sh msf.sh nexus.sh phylipi.sh phylips.sh \
 	stockholm.sh
-TESTS_SEQS = embl.sh genbank.sh ig.sh raw.sh sprot.sh
+TESTS_SEQS = embl.sh genbank.sh ig.sh raw.sh
 
 XFAIL_TESTS =
 
